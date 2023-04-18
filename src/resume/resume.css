@@ -1,0 +1,150 @@
+.wd80{
+	width: 80%;
+	margin: 0 auto;
+}
+.pt5{
+	padding-top: 5em;
+}
+
+.resume{
+	width: 60px;
+	text-align: center;
+	padding: 2px;
+	margin: 0 auto;
+	background-color:#f5df4e;
+	color: white;
+}
+.headtext{
+	font-size: 2em;
+    font-weight: 600;
+}
+.about{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 6em 0  2em 0;
+	justify-content: center;
+}
+.head{
+	font-weight: 500;
+	font-size: 1.3em;
+	color: #272626;
+}
+.eductaion , .experience{
+	width: 430px; 
+}
+
+.borderYellow{
+	border-left: 3px solid #f5df4e ;
+    padding-left: 15px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.txt{
+	font-size: 1.07em;
+	color: #7e7979;
+	padding: 5px 0;
+}
+.study{
+	padding: 15px 0;
+}
+
+.pd1b{
+	padding-bottom: 1em;
+}
+.skill{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0 2em 0;
+	justify-content: center;
+}
+.d-flex{
+	display: flex;
+	justify-content: space-between;
+}
+.yellowLine{
+	height: 6px;
+	background: rgb(215, 214, 214);
+}
+.mr1{
+	margin: 1em 0;
+}
+.h6{
+	height: 6px;
+	background-color:#f5df4e;
+}
+
+.wd65{
+	width: 65%;
+}
+.wd80t{
+	width: 80%;
+}
+
+.wd60{
+	width: 60%;
+}
+
+.wd95{
+	width: 95%;
+}
+
+.wd70{
+	width: 70%;
+}
+
+.wd99{
+	width: 99%;
+}
+
+.font{
+	font-size: 1em;
+	font-weight: 500;
+}
+.orta{
+	width: 53%;
+	margin: 0 auto;
+ }
+
+.tcenter{
+	text-align: center;
+}
+
+.download{
+	width: 120px;
+    margin: 2em auto;
+    padding: 15px 25px;
+    border: 2px solid black;
+    transition: all 1s;
+}
+
+.download:hover{
+	background-color: rgb(31, 30, 30);
+	color: white;
+}
+
+
+
+@media only screen and (max-width: 390px) {
+	
+}
+
+@media only screen and (min-width: 600px) {
+	
+}
+
+@media only screen and (min-width: 770px) {
+
+}
+
+@media only screen and (min-width: 1120px) {
+	.about{
+		justify-content: space-between;
+	}
+	.skill{
+		justify-content: space-between;
+	}
+	.orta{
+		width: inherit;
+		margin: inherit;
+	}
+}
