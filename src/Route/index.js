@@ -1,3 +1,4 @@
+import Portfolio from "../Portofilo/Portfolio";
 import Header from "../header/header";
 import Main from "../main/main";
 import Projects from "../project/project";
@@ -12,6 +13,7 @@ function Routing() {
                         <Main/>
                         <Projects/>
 					<Resume/>
+					<Portfolio/>
 		</>
 	)
 }
