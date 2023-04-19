@@ -53,7 +53,7 @@ function Projects() {
 						<FontAwesomeIcon icon={faPaintbrush} className="logos" />
 						</div>
 						<h2>
-						UI/UX Design
+						App Design & Develop
 						</h2>
 						<p className="text">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.
@@ -64,7 +64,7 @@ function Projects() {
 						<FontAwesomeIcon icon={faChartArea} className="logos" />
 						</div>
 						<h2>
-						UI/UX Design
+						Business Analysis
 						</h2>
 						<p className="text">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.
@@ -75,7 +75,7 @@ function Projects() {
 						<FontAwesomeIcon icon={faBullhorn} className="logos" />
 						</div>
 						<h2>
-						UI/UX Design
+						SEO Marketing
 						</h2>
 						<p className="text">
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.

@@ -10,7 +10,11 @@
 	background-color: #f5df4e;
  }
  
- 
+ .typewriter{
+	font-size: 6em;
+	font-weight: 600;
+	color: white;
+ }
  
  .menu {
 	display: flex;

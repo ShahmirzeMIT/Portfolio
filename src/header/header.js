@@ -4,14 +4,15 @@ import Logo from '../assets/logo.png'
 import Face from '../assets/greencard.jpeg'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { faEnvelope,faPhoneFlip,faArrowDown,faBars } from '@fortawesome/free-solid-svg-icons'
+import Typewriter from "typewriter-effect";
 function Header() {
+	
 	return(
 			<>
     <header>
 
 <nav>
     <div className="menu wd-80">
-    {/* <img src="img/logo.png" alt=""> */}
     
 	   <div>
 		<img src={Logo} />
@@ -27,6 +28,23 @@ function Header() {
 <div className="content wd-80 p4em">
     <div className="openword">
 	   <h1>HI, I'M A FREELANCER</h1>
+	   <div  className="typewriter">
+		 <Typewriter
+		
+		onInit={(typewriter)=> {
+		typewriter
+		.typeString("DESIGNER")
+		.pauseFor(1000)
+		.deleteAll()
+		.typeString("DEVELOPER")
+		.pauseFor(1000)
+		.deleteAll()
+		.typeString("CALLUM")
+		.start();
+  		}}
+ />
+	   </div>
+	  
 	   <p>based in Toronto, Canada</p>
 	   <div className="contact">
 		  <a href="">Veiw my Works</a>
