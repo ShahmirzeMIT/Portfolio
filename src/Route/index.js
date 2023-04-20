@@ -6,6 +6,7 @@ import Main from "../main/main";
 import Projects from "../project/project";
 import Resume from "../resume/resume";
 import Questions from "../question/question";
+import Laptop from "../laptop/laptop";
 
 
 
@@ -17,7 +18,9 @@ function Routing() {
                         <Projects/>
 					<Resume/>
 					<Portfolio/>
+					<Laptop/>
 					<Questions/>
+					
 		</>
 	)
 }
