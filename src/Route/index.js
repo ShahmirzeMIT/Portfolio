@@ -7,6 +7,7 @@ import Projects from "../project/project";
 import Resume from "../resume/resume";
 import Questions from "../question/question";
 import Laptop from "../laptop/laptop";
+import Contact from "../contact/contact";
 
 
 
@@ -20,6 +21,7 @@ function Routing() {
 					<Portfolio/>
 					<Laptop/>
 					<Questions/>
+					<Contact/>
 					
 		</>
 	)
