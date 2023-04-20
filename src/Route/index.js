@@ -8,7 +8,7 @@ import Resume from "../resume/resume";
 import Questions from "../question/question";
 import Laptop from "../laptop/laptop";
 import Contact from "../contact/contact";
-
+import Footer from "../footer/footer"
 
 
 function Routing() {
@@ -22,6 +22,7 @@ function Routing() {
 					<Laptop/>
 					<Questions/>
 					<Contact/>
+					<Footer/>
 					
 		</>
 	)
