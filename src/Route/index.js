@@ -9,6 +9,7 @@ import Questions from "../question/question";
 import Laptop from "../laptop/laptop";
 import Contact from "../contact/contact";
 import Footer from "../footer/footer"
+import Slider from "../slider/slider";
 
 
 function Routing() {
@@ -21,6 +22,7 @@ function Routing() {
 					<Portfolio/>
 					<Laptop/>
 					<Questions/>
+					<Slider/>
 					<Contact/>
 					<Footer/>
 					

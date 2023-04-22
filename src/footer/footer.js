@@ -7,7 +7,6 @@ function Footer(){
 				<div>Copyright © 2023 Callum. All Rights Reserved.</div>
 				<div>Designed by Shahmirze Mammadyarli</div>
 			</div>
-
 		</footer>
 	)
 }
