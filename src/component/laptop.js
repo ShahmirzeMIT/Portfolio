@@ -1,4 +1,4 @@
-import styles from "./laptop.css"
+import styles from "../index.css"
 import Comp from "../assets/laptop.jpg"
 
 function Laptop(){

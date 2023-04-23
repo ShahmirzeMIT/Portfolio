@@ -1,8 +1,5 @@
-
-import styles from "./question.css"
+import styles from "../index.css"
 import Light from "../assets/faq.png"
-
-
 import Accordion from "./accordion"
 
  

@@ -1,9 +1,8 @@
-import styles from "./main.css"
-import { Link, animateScroll as scroll } from "react-scroll";
+import styles from "../index.css"
 function Main() {
 	return(
 		<>
-		<main>
+		<main id="know">
 		<div className="wd-80">
 			<div className="aboutme ">
 					<p>About Me</p>
@@ -11,14 +10,14 @@ function Main() {
 				<h1>Know Me More</h1>
 				<div className="Know">
 					<article>
-						<h2>Hi, I'm <span>Callum Smith</span></h2>
+						<h2>Hi, I'm <span>Shahmirze Mammadyarli</span></h2>
 						<p className="pt2">
 						I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.
 						</p>
 					</article>
 					<article>
 							<div>
-								22
+								2
 							<p className="bgYellow"></p>
 						</div>
 							<h2>Years of <span style={{fontWeight:700}}>Experiance</span> </h2>

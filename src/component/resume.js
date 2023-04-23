@@ -1,10 +1,10 @@
-import styles  from "./resume.css"
+import styles  from "../index.css"
 
 
 function Resume() {
 	return(
 		<>
-			<section>
+			<section id="works">
 				<div className="wd80 pt5">
 					<div>
 						<div className="resume">

@@ -1,7 +1,7 @@
-import styles from "./project.css"
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope,faPalette,faDisplay ,faPenRuler,faPaintbrush,faChartArea,faBullhorn} from '@fortawesome/free-solid-svg-icons'
+import styles from "../index.css"
+import {BsFillPaletteFill, BsDisplay} from "react-icons/bs"
+import {FaPencilRuler, FaChartArea , FaBullhorn} from 'react-icons/fa'
+import {HiPaintBrush} from 'react-icons/hi2'
 function Projects() {
 	
 	return(
@@ -17,7 +17,7 @@ function Projects() {
 				<div className="design">
 					<div className="txtCenter">
 						<div>
-						<FontAwesomeIcon icon={faPalette} className="logos" />
+						<BsFillPaletteFill className="logos" />
 						</div>
 						<h2>
 						Graphic Design
@@ -28,7 +28,7 @@ function Projects() {
 					</div>
 					<div className="txtCenter">
 						<div>
-						<FontAwesomeIcon icon={faDisplay}  className="logos"/>
+						<BsDisplay  className="logos"/>
 						</div>
 						<h2>
 						Web Design
@@ -39,7 +39,7 @@ function Projects() {
 					</div>
 					<div className="txtCenter">
 						<div>
-						<FontAwesomeIcon icon={faPenRuler} className="logos" />
+						<FaPencilRuler className="logos" />
 						</div>
 						<h2>
 						UI/UX Design
@@ -50,7 +50,7 @@ function Projects() {
 					</div>
 					<div className="txtCenter">
 						<div>
-						<FontAwesomeIcon icon={faPaintbrush} className="logos" />
+						<HiPaintBrush className="logos" />
 						</div>
 						<h2>
 						App Design & Develop
@@ -61,7 +61,7 @@ function Projects() {
 					</div>
 					<div className="txtCenter">
 						<div>
-						<FontAwesomeIcon icon={faChartArea} className="logos" />
+						<FaChartArea className="logos" />
 						</div>
 						<h2>
 						Business Analysis
@@ -72,7 +72,7 @@ function Projects() {
 					</div>
 					<div className="txtCenter">
 						<div>
-						<FontAwesomeIcon icon={faBullhorn} className="logos" />
+						<FaBullhorn className="logos" />
 						</div>
 						<h2>
 						SEO Marketing

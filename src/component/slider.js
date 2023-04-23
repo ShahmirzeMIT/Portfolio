@@ -1,4 +1,4 @@
-import styles from './slider.css'
+import styles from '../index.css'
 import Image from "../assets/greencard.jpeg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight,faArrowLeft} from '@fortawesome/free-solid-svg-icons'
@@ -15,7 +15,6 @@ function Slider(){
 					<h5 className='txtCSlide'>Sako </h5>
 					<p className='txtCSlide'>User from Toronto</p>
 					<div className='arrowLeft'><FontAwesomeIcon icon={faArrowLeft} /></div>
-
 				</div>
 			</div>
 		</section>

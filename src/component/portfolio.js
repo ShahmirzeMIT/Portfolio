@@ -1,4 +1,4 @@
-import styles from "./portfolio.css"
+import styles from "../index.css"
 import Sekil1 from "../assets/project-1.jpg"
 import Sekil2 from "../assets/project-2.jpg"
 import Sekil3 from "../assets/project-3.jpg"
