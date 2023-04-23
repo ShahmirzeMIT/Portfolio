@@ -13,7 +13,7 @@ function Slider(){
 					<p className='slideText'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
 					<div className='slideImg'><img src={Image} /></div>
 					<h5 className='txtCSlide'>Sako </h5>
-					<p className='txtCSlide'>User from Canada</p>
+					<p className='txtCSlide'>User from Toronto</p>
 					<div className='arrowLeft'><FontAwesomeIcon icon={faArrowLeft} /></div>
 
 				</div>
