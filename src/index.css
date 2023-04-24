@@ -20,12 +20,12 @@ code {
  }
  
  header {
-	height: 140vh;
+	height: 110vh;
 	background-color: #f5df4e;
  }
  
  .typewriter{
-	font-size: 5.1em;
+	font-size: 4.2em;
 	font-weight: 600;
 	color: black;
  }
@@ -96,18 +96,25 @@ code {
 	font-weight: 500;
 	background: black;
 	color: white;
-	font-size: 1.2em;
 	transition: all 0.5s;
+  text-decoration: none;
  }
  
  .contact a:first-child:hover {
 	box-shadow: inset 0px 0px 100px rgb(84, 83, 83);
  }
+ .btnOpen{
+  padding: 0 !important ;
+  margin: 0 0 2em 0 !important;
+  font-size: 1.2em !important;
+  color: black !important;
+ }
+ 
  
  .contact a:last-child {
-	font-size: 1.2em;
+	
 	color: black;
-	padding-left: 30px;
+	padding-left: 1em;
   position: relative;
  }
  .contact a:last-child span{
@@ -420,7 +427,7 @@ code {
 }
 
 .download{
-	width: 120px;
+	  width: 180px;
     margin: 2em auto;
     padding: 15px 25px;
     border: 2px solid black;
@@ -544,7 +551,7 @@ code {
   opacity: 0.7;
   overflow: hidden;
   }
-  .btn button{
+  .btn1 button{
     padding: 14px 30px;
     border: none;
     margin-top: 2em;
@@ -554,7 +561,7 @@ code {
   
   }
 
-  .btn{
+  .btn1{
     text-align: center;
   }
   
@@ -584,7 +591,7 @@ code {
 .faq{
 	padding: 2px 10px;
     background: yellow;
-    width: 27px;
+    width: 45px;
 }
 .opendiv{
 position: relative;
@@ -668,7 +675,24 @@ position: relative;
 .sliderContent{
 position: relative;
 }
-
+.carousel-inner{
+  text-align: center;
+}
+.wd50P{
+  width: 50%;
+  margin: 3em auto;
+}
+.littleImg{
+  width: 50px;
+  margin: 0em auto 0em  auto;
+}
+.littleImg img{
+  width: 100%;
+  border-radius: 50%;
+}
+.ptP{
+  padding-bottom: 2em;
+}
 .arrowRight{
 	position: absolute;
 	right: 10%;
@@ -784,7 +808,11 @@ color: white;
   
   
     
-
+  @media only screen and (max-width: 350px) {
+    header{
+      height: 170vh;
+    }
+  }
  @media only screen and (max-width: 390px) {
 	.menu {
 	    display: flex;
@@ -796,7 +824,11 @@ color: white;
 	    text-align: center;
 	}
  }
- 
+ @media only screen and (min-width: 390px) {
+  header{
+    height: 130vh;
+  }
+ }
  @media only screen and (min-width: 600px) {
 	.wd-80 {
 	    width: 80%;
@@ -855,13 +887,17 @@ color: white;
 	    text-align: inherit;
 	}
 	.content {
-	    margin: 2.5em auto;
+	    margin: 2em auto 0 auto;
 	}
+  .openMenuLink{
+    padding: 10px 5px;
+    font-size: 1.7em;
+  }
 	.scroll {
 	    padding-top: 0;
 	}
 	header{
-		height: 100vh;
+		height: 100vh !important;
 	}
 	@keyframes scroll {
 	    from {
@@ -886,7 +922,7 @@ color: white;
 	.bgYellow{
 		
 		top: 100px;
-		left: 185px;
+		left: 145px;
 		transform: inherit;
 		
 	}

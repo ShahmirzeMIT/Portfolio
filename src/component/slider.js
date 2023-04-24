@@ -1,23 +1,48 @@
 import styles from '../index.css'
 import Image from "../assets/greencard.jpeg"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight,faArrowLeft} from '@fortawesome/free-solid-svg-icons'
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Slider(){
 	return(
-		<section className='grayS'>
+		<section className='grayS' id='slider'>
 			<div className='wd80Sl'>
 				<div className='client'><div>Client Speak</div></div>
 				<h1 className='whiteS'>What Some of my Clients Say</h1>
-				<div className='sliderContent'>
-					<div className='arrowRight'><FontAwesomeIcon icon={faArrowRight} /></div>
-					<p className='slideText'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-					<div className='slideImg'><img src={Image} /></div>
-					<h5 className='txtCSlide'>Sako </h5>
-					<p className='txtCSlide'>User from Toronto</p>
-					<div className='arrowLeft'><FontAwesomeIcon icon={faArrowLeft} /></div>
-				</div>
-			</div>
-		</section>
+				
+				<Carousel>
+      <Carousel.Item>
+        
+          <p className="wd50P">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam at quam bibendum bibendum. Donec euismod, velit vel lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit vel nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl at ante. Sed auctor enim sed enim ultrices, vel suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis. </p>
+          <div className="littleImg"> 
+                <img src={Image} />
+          </div>
+          <p>Shahmirze Mammadyarli</p>
+          <p className='ptP'>Freelancer from Baku </p>
+      </Carousel.Item>
+      <Carousel.Item>
+          <p  className="wd50P">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam at quam bibendum bibendum. Donec euismod, velit vel lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit vel nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl at ante. Sed auctor enim sed enim ultrices, vel suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis. </p>
+          <div className="littleImg"> 
+                <img src={Image} />
+          </div>
+          <p>Shahmirze Mammadyarli</p>
+          <p className='ptP'>Freelancer from Baku </p>
+        
+      </Carousel.Item>
+      <Carousel.Item>
+          <p  className="wd50P">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam at quam bibendum bibendum. Donec euismod, velit vel lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit vel nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl at ante. Sed auctor enim sed enim ultrices, vel suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis.
+          </p>
+          <div className="littleImg"> 
+                <img src={Image} />
+          </div>
+          <p>Shahmirze Mammadyarli</p>
+          <p className='ptP'>Freelancer from Baku </p>
+       
+      </Carousel.Item>
+    </Carousel>
+		</div>
+
+</section>
 	)
 }
 

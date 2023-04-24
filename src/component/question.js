@@ -7,7 +7,7 @@ function Questions(){
 	
 	return(
 		<>
-			<section>
+			<section id="question">
 				<div>
 					<div className="question">
 						<div className="openQ">

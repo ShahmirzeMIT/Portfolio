@@ -5,7 +5,7 @@ import {HiPaintBrush} from 'react-icons/hi2'
 function Projects() {
 	
 	return(
-		<section className="bgGray">
+		<section className="bgGray" id="experience">
 			<div className="wd80 mrp5">		
 			<div className="whatBtn mr5 mrp5 wd80" >
 				<p className="">

@@ -8,7 +8,7 @@ import Sekil6 from "../assets/project-6.jpg"
 function Portfolio(){
 	return(
 		<>
-		<section>
+		<section id='project'>
 			<div className="bgBeige">
 				<div className="contentP">
 				<div className="centr">
