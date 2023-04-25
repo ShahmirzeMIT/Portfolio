@@ -9,8 +9,6 @@ import Slider from "./component/slider";
 import Header from "./component/header";
 import Main from "./component/main";
 
-
-
 function App() {
     return (
       <>

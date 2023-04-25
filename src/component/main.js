@@ -42,7 +42,7 @@ function Main() {
 				</div>
 				<div className="mr-auto600">
 					<p>From:</p>
-					<p className="bold">Qobustan Poladli,Azerbijan</p>
+					<p className="bold">Baku,Azerbijan</p>
 				</div>
 			</div>
 		</div>	
