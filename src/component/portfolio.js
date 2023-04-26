@@ -66,9 +66,6 @@ function Portfolio(){
 									<div className={`wd300 ${open===2 || open===0 ? "" : "dpNone "}${open===2 ? "pd15": ""}`}>
 										<img src={Sekil6} />
 									</div>
-								
-					
-					
 				</div>
 				</div>
 			</div>
