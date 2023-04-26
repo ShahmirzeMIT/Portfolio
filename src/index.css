@@ -292,13 +292,23 @@ code {
      justify-content: space-around; 
      width: 100%;
   }
+  .dpNone{
+    display: none;
+  }
   .pickOut ul li{
     padding: 0 1em;
+    cursor: pointer;
   }
   .pictures{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .jsCenter{
+    justify-content: center !important;
+  }
+  .pd15{
+    padding: 0px 15px !important;
   }
   
   .wd300{
