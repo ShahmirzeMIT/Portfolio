@@ -1,5 +1,4 @@
 import styles from "../index.css"
-import Comp from "../assets/laptop.jpg"
 
 function Laptop(){
 	return(
@@ -7,7 +6,7 @@ function Laptop(){
 			<section className="psR">
 				<div className="lapimg">
 					
-					<img src={Comp} />
+					<img src={"./assets/" + "laptop.jpg"} />
 					
 				</div>
 				<div className="shadow"></div>

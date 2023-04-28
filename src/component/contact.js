@@ -8,7 +8,7 @@ function Contact(){
 					<h1 className="txtStart">Let's get in touch</h1>
 					<p className="fnt">I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
 					<h3 className="pd2C">Living in</h3>
-					<p className="fnt">Baku, Moskva Prospekti 52 </p>
+					<p className="fnt">Baku, 20Yanvar Moskva Prospekti 52 </p>
 					<h3 className="calPd8">Whatsapp</h3>
 					<p className="fnt">(+994) 55 698 45 46 </p>
 					<div>

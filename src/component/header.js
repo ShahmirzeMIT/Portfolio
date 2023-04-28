@@ -1,6 +1,5 @@
 import styles from '../index.css'
-import Logo from '../assets/logo.png'
-import Face from '../assets/greencard.jpeg'
+
 import { FaPhoneAlt ,FaTwitter , } from 'react-icons/fa';
 import {AiOutlineArrowDown}  from "react-icons/ai"
 import{ FiMenu} from "react-icons/fi"
@@ -19,7 +18,7 @@ function Header() {
 			<nav>
 			<div className="menu wd-80">
 				<div>
-					<img src={Logo} />
+					<img src={"./assets/" + "logo.png"} />
 				</div>
 				<div className="rightList">
 					<ul>
@@ -86,7 +85,6 @@ function Header() {
 											<a href="https://www.linkedin.com/in/sahmirze-memmedyarov-69ba60220/" className='openMenuLink' target="_blank"><BsLinkedin/></a> 
 											<a href="" className='openMenuLink' target="_blank"><BsReddit/></a> 
 											<a href="" className='openMenuLink' target="_blank"></a> 
-											
 										</ListItemText>
 									</MenuItem>
 								</MenuList>
@@ -136,7 +134,7 @@ function Header() {
 			</div>
 			<div className="face">
 				<div className="image">
-					<img src={Face} />
+					<img src={"./assets/" + "greencard.jpeg"} />
 				</div>
 
 			</div>

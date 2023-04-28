@@ -1,0 +1,55 @@
+{
+	"information":[
+		{
+			"target":"Name:",
+			"inf":"Shahmirze Mammadyarlı"
+		},
+		{
+			"target":"Email:",
+			"inf":"shahmirzememmedyarov@gmail.com"
+		},
+		{
+			"target":"Date of Birth:",
+			"inf":"15 August,2003"
+		},
+		{
+			"target":"From:",
+			"inf":"Baku,Azerbijan"
+		}
+	],
+	"project":[
+		{
+			"work":"Graphic Design",
+			"text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text."
+		},
+		{
+			"work":"Web Design",
+			"text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text."
+		},
+		{
+			"work":"UI/UX Design",
+			"text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text."
+		},
+		{
+			"work":"App Design & Develop",
+			"text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text."
+		},
+		{
+			"work":"Business Analysis",
+			"text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text."
+		},
+		{
+			"work":"SEO Marketing",
+			"text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text."
+		}	
+	],
+	"menu":["All","Details","Mockups","YouTube Videos","Vime Videos"],
+	"image":[
+		{ "src":"project-1.jpg", "cat":[1] },
+		{ "src":"project-2.jpg", "cat":[2] },
+		{ "src":"project-3.jpg", "cat":[3] },
+		{ "src":"project-4.jpg", "cat":[4] },
+		{ "src":"project-5.jpg", "cat":[2] },
+		{ "src":"project-6.jpg", "cat":[1] }
+	]
+}

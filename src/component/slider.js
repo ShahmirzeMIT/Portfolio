@@ -1,5 +1,4 @@
 import styles from '../index.css'
-import Image from "../assets/greencard.jpeg"
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function Slider(){
@@ -13,7 +12,7 @@ function Slider(){
                     <Carousel.Item>
                             <p className="wd50P">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam at quam bibendum bibendum. Donec euismod, velit vel lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit vel nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl at ante. Sed auctor enim sed enim ultrices, vel suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis. </p>
                             <div className="littleImg"> 
-                            <img src={Image} />
+                            <img src={"./assets/" + "greencard.jpeg"} />
                             </div>
                             <p>Shahmirze Mammadyarli</p>
                             <p className='ptP'>Freelancer from Baku </p>
@@ -21,7 +20,7 @@ function Slider(){
                     <Carousel.Item>
                             <p  className="wd50P">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam at quam bibendum bibendum. Donec euismod, velit vel lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit vel nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl at ante. Sed auctor enim sed enim ultrices, vel suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis. </p>
                             <div className="littleImg"> 
-                             <img src={Image} />
+                             <img src={"./assets/" + "greencard.jpeg"} />
                             </div>
                             <p>Shahmirze Mammadyarli</p>
                             <p className='ptP'>Freelancer from Baku </p>
@@ -31,7 +30,7 @@ function Slider(){
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam at quam bibendum bibendum. Donec euismod, velit vel lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit vel nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl at ante. Sed auctor enim sed enim ultrices, vel suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis.
                             </p>
                             <div className="littleImg"> 
-                                    <img src={Image} />
+                                    <img src={"./assets/" + "greencard.jpeg"} />
                             </div>
                             <p>Shahmirze Mammadyarli</p>
                             <p className='ptP'>Freelancer from Baku </p>

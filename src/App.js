@@ -8,6 +8,7 @@ import Footer from "./component/footer"
 import Slider from "./component/slider";
 import Header from "./component/header";
 import Main from "./component/main";
+import Check from "./component/check";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
           <Slider/>
           <Contact/>
           <Footer/>
+          <Check/>
       </>
     );
     }

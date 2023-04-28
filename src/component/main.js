@@ -1,6 +1,11 @@
-import styles from "../index.css"
+"use strict";
+import { useEffect } from "react";
+import styles from "../index.css";
+import data from "../myapp.json"
 function Main() {
+
 	return(
+
 		<>
 		<main id="know">
 		<div className="wd-80">
@@ -24,8 +29,17 @@ function Main() {
 					</article>
 				</div>
 			<div className="Elaqe">
-			<div className="nameEm wd-600 mr-auto" >
-				<div  className="mr-auto600" >
+				<div className="nameEm wd-600 mr-auto" >
+					{
+						data.information.map((item,i)=> i==0 ||i==1 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
+					}
+				</div>
+				<div className="nameEm wd-400 mr-auto" >
+					{
+						data.information.map((item,i)=> i==2 ||i==3 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
+					}
+				</div>
+				{/* <div  className="mr-auto600" >
 					<p>Name:</p>
 					<p className="bold">Shahmirze Mammadyarlı</p>
 				</div>
@@ -43,9 +57,9 @@ function Main() {
 				<div className="mr-auto600">
 					<p>From:</p>
 					<p className="bold">Baku,Azerbijan</p>
-				</div>
+				</div> */}
 			</div>
-		</div>	
+			
 		</div>
 		
 		</main>
