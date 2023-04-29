@@ -1,9 +1,9 @@
-"use strict";
+
 import { useEffect } from "react";
 import styles from "../index.css";
-import data from "../myapp.json"
-function Main() {
+function Main({information}) {
 
+	
 	return(
 
 		<>
@@ -11,59 +11,34 @@ function Main() {
 		<div className="wd-80">
 			<div className="aboutme ">
 					<p>About Me</p>
-				</div>
+			</div>
 				<h1>Know Me More</h1>
 				<div className="Know">
 					<article>
 						<h2>Hi, I'm <span>Shahmirze Mammadyarli</span></h2>
 						<p className="pt2">
-						I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.
+							I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.
 						</p>
 					</article>
 					<article>
-							<div>
-								2
-							<p className="bgYellow"></p>
-						</div>
+							<div>2<p className="bgYellow"></p></div>
 							<h2>Years of <span style={{fontWeight:700}}>Experiance</span> </h2>
 					</article>
 				</div>
 			<div className="Elaqe">
 				<div className="nameEm wd-600 mr-auto" >
 					{
-						data.information.map((item,i)=> i==0 ||i==1 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
+						information.map((item,i)=> i===0 ||i===1 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
 					}
 				</div>
 				<div className="nameEm wd-400 mr-auto" >
 					{
-						data.information.map((item,i)=> i==2 ||i==3 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
+						information.map((item,i)=> i===2 ||i===3 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
 					}
 				</div>
-				{/* <div  className="mr-auto600" >
-					<p>Name:</p>
-					<p className="bold">Shahmirze Mammadyarlı</p>
-				</div>
-				<div className="mr-auto600">
-					<p>Email:</p>
-					<p className="bold">shahmirzememmedyarov@gmail.com</p>
-				</div>
-
-			</div>	
-			<div className="nameEm wd-400 mr-auto" >
-				<div className="mr-auto600">
-					<p>Date of Birth:</p>
-					<p className="bold">   15 August,2003</p>
-				</div>
-				<div className="mr-auto600">
-					<p>From:</p>
-					<p className="bold">Baku,Azerbijan</p>
-				</div> */}
 			</div>
-			
-		</div>
-		
+		 </div>
 		</main>
-	
 		</>
 	)
 }

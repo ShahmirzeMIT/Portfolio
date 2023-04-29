@@ -2,7 +2,6 @@ import styles from "../index.css"
 import {BsFillPaletteFill, BsDisplay} from "react-icons/bs"
 import {FaPencilRuler, FaChartArea , FaBullhorn} from 'react-icons/fa'
 import {HiPaintBrush} from 'react-icons/hi2'
-import data from "../myapp.json"
 const logo=[
 		   {logo:<BsFillPaletteFill className='logos' />},
 		   {logo:<BsDisplay  className='logos'/>},
@@ -11,8 +10,7 @@ const logo=[
 		   {logo:<FaChartArea className='logos' />},
 		   {logo:<FaBullhorn className='logos' />}
 		]
-function Projects() {
-	console.log(data)
+function Projects({project}) {
 	return(
 		<section className="bgGray" id="experience">
 			<div className="wd80 mrp5">		
@@ -25,7 +23,7 @@ function Projects() {
 			<div className="course">
 				<div className="design">
 					{
-						data.project.map((item,i)=>
+						project.map((item,i)=>
 						<div className="txtCenter">
 						<div>
 						{logo[i].logo}

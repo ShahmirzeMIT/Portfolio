@@ -1,17 +1,13 @@
 import styles from "../index.css"
-
 import { useState } from "react"
-import data from "../myapp.json"
 
 
-
-function Portfolio() {
+function Portfolio({menu,image}) {
 	const [filter, setFilter] = useState(0)
 
 	function filterByCat() {
-		return filter === 0 ? data.image :  data.image.filter( item => item.cat.includes(filter))
+		return filter === 0 ? image :  image.filter( item => item.cat.includes(filter))
 	}
-	console.log(filterByCat())
 	return(
 		<>
 		<section id='project'>
@@ -24,7 +20,7 @@ function Portfolio() {
 				<div className="pickOut">
 					<ul>
 						{
-							data.menu.map( (item,i) => <li onClick={ () => setFilter(i) }>{item}</li>)
+							menu.map( (item,i) => <li onClick={ () => setFilter(i) }>{item}</li>)
 						}
 					</ul>
 				</div>

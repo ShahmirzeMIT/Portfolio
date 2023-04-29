@@ -6,8 +6,11 @@ import{ FiMenu} from "react-icons/fi"
 import {BsArrowDownCircle, BsFacebook, BsInstagram, BsLinkedin ,BsReddit} from "react-icons/bs"
 import Typewriter from "typewriter-effect";
 import { useState } from 'react';
-import { Box, Button, Divider, ListItemIcon, ListItemText, MenuItem, MenuList, Modal, Paper, Typography } from '@mui/material';
-function Header() {
+import { Box, Button, ListItemText, MenuItem, MenuList, Modal, Paper, Typography } from '@mui/material';
+
+
+function Header({menu}) {
+
 	const [open, setOpen] =useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
@@ -36,64 +39,30 @@ function Header() {
 								color:"white",
 								paddingTop:"5em"
 								}}>
-									<MenuItem>
-										<ListItemText  onClick={handleClose}>
-											<a href="#home">Home</a> 
-										</ListItemText>
-									</MenuItem>
-									<MenuItem>
-										<ListItemText  onClick={handleClose}>
-											<a href="#know">About Me</a> 
-										</ListItemText>
-									</MenuItem>
-									<MenuItem>
-										<ListItemText  onClick={handleClose}>
-											<a href="#experience">What I do</a> 
-										</ListItemText>
-									</MenuItem>
-									
-									<MenuItem>
-										<ListItemText  onClick={handleClose}>
-											<a href="#works">Resume</a>
-										 </ListItemText>
-									</MenuItem>
-									<MenuItem>
-										<ListItemText  onClick={handleClose}>
-											<a href="#project">Portofilo</a> 
-										</ListItemText>
-									</MenuItem>
-									<MenuItem>
-										<ListItemText  onClick={handleClose}>
-											<a href="#question">FAQ</a> 
-										</ListItemText>
-									</MenuItem>
-									<MenuItem>
-										<ListItemText  onClick={handleClose}>
-											<a href="#slider">Client Speak</a>  
-										</ListItemText>
-									</MenuItem>
-									<MenuItem>
-										<ListItemText  onClick={handleClose}>
-											<a href="#contact">Contact Me</a> 
-										</ListItemText>
-									</MenuItem>
+									 { 
+										
+										menu.map(item=>
+										<MenuItem>
+											<ListItemText  onClick={handleClose}>
+												<a href={`#${item.id}`}>{item.menu}</a> 
+											</ListItemText>
+										</MenuItem>)
+									} 
 									<MenuItem>
 										<ListItemText  onClick={handleClose}>
 											<a href="https://twitter.com/ShahmirzeM" className='openMenuLink' target="_blank"><FaTwitter/></a> 
 											<a href="" className='openMenuLink' target="_blank"><BsFacebook/></a> 
 											<a href="https://www.instagram.com/botman_ru/" className='openMenuLink' target="_blank"><BsInstagram/></a> 
 											<a href="https://www.linkedin.com/in/sahmirze-memmedyarov-69ba60220/" className='openMenuLink' target="_blank"><BsLinkedin/></a> 
-											<a href="" className='openMenuLink' target="_blank"><BsReddit/></a> 
+											<a href="https://www.reddit.com/user/Aggressive-Light-980" className='openMenuLink' target="_blank"><BsReddit/></a> 
 											<a href="" className='openMenuLink' target="_blank"></a> 
 										</ListItemText>
 									</MenuItem>
 								</MenuList>
 							</Paper>
 							<Typography id="modal-modal-title" variant="h6" component="h2">
-								
 							</Typography>
 							<Typography id="modal-modal-description" sx={{ mt: 2 }}>
-								
 							</Typography>
 							</Box>
 						</Modal>
