@@ -19,7 +19,6 @@ function App() {
         .then(resp => resp.json())
         .then(txt => setSent(txt))
       },[])
-     
     return (
       <>
           <Header menu={sent.headerMenu} />

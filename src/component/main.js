@@ -1,5 +1,3 @@
-
-import { useEffect } from "react";
 import styles from "../index.css";
 function Main({information}) {
 
@@ -27,13 +25,15 @@ function Main({information}) {
 				</div>
 			<div className="Elaqe">
 				<div className="nameEm wd-600 mr-auto" >
-					{
+					{ information && information.length > 0 ?
 						information.map((item,i)=> i===0 ||i===1 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
+						:""
 					}
 				</div>
 				<div className="nameEm wd-400 mr-auto" >
-					{
+					{ information && information.length > 0 ?
 						information.map((item,i)=> i===2 ||i===3 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
+						:""
 					}
 				</div>
 			</div>

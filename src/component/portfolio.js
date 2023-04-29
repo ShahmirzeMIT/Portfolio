@@ -6,8 +6,10 @@ function Portfolio({menu,image}) {
 	const [filter, setFilter] = useState(0)
 
 	function filterByCat() {
-		return filter === 0 ? image :  image.filter( item => item.cat.includes(filter))
-	}
+		if(image && image.length>0){
+			 	return filter === 0 ? image :  image.filter( item => item.cat.includes(filter))
+		}
+	 }
 	return(
 		<>
 		<section id='project'>
@@ -19,15 +21,16 @@ function Portfolio({menu,image}) {
 				<h1>Some of my most recent projects</h1>
 				<div className="pickOut">
 					<ul>
-						{
+						{ menu  && menu.length > 0 ?
 							menu.map( (item,i) => <li onClick={ () => setFilter(i) }>{item}</li>)
+							:""
 						}
 					</ul>
 				</div>
 					<div className={`pictures ${filter!==0 ? "jsCenter" :""}}`}>
-						{
+						{/* {
 						     filterByCat().map( pic =><div className="wd300 "> <img src={"./assets/" + pic.src} /></div>  )
-						}
+						} */}
 					</div>
 				</div>
 			</div>

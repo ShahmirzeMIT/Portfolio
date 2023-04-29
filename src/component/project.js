@@ -22,19 +22,19 @@ function Projects({project}) {
 			</div>
 			<div className="course">
 				<div className="design">
-					{
+					{ project && project.length > 0 ?
 						project.map((item,i)=>
 						<div className="txtCenter">
-						<div>
-						{logo[i].logo}
-						</div>
-						<h2>
-						{item.work}
-						</h2>
-						<p className="text">
-						{item.text}
-						</p>
-					</div>)
+							<div>
+							{logo[i].logo}
+							</div>
+							<h2>
+							{item.work}
+							</h2>
+							<p className="text">
+							{item.text}
+							</p>
+						</div>) :""
 					}
 					
 				</div>

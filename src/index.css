@@ -862,7 +862,7 @@ color: white;
 @media only screen and (min-width: 730px) {
 	.word{
 		position: absolute;
-		left: 20%;
+		left: 30%;
 	}
 }
 
@@ -892,7 +892,7 @@ color: white;
   @media only screen and (min-width: 935px) {
     .word{
       position: absolute;
-      left: 30%;
+      left: 35%;
     }
   }
 
