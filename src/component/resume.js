@@ -94,7 +94,7 @@ function Resume({education,experience,skill1,skill2}) {
 						</div>
 					</div>
 					<div className="tcenter">
-						<div className="download">Download CV</div>
+						<div className="download"><a href="./assets/cv/cv.pdf" download>Download CV</a> </div>
 					</div>
 				</div>
 

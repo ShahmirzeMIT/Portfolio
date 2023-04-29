@@ -13,7 +13,6 @@ import { useState } from "react";
 function App() {
   
   const  [sent, setSent] = useState({});
-
       useEffect(()=>{
         fetch('./assets/json/myapp.json')
         .then(resp => resp.json())
