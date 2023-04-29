@@ -6,9 +6,7 @@ function Portfolio({menu,image}) {
 	const [filter, setFilter] = useState(0)
 
 	function filterByCat() {
-		if(image && image.length>0){
 			 	return filter === 0 ? image :  image.filter( item => item.cat.includes(filter))
-		}
 	 }
 	return(
 		<>
@@ -27,10 +25,11 @@ function Portfolio({menu,image}) {
 						}
 					</ul>
 				</div>
-					<div className={`pictures ${filter!==0 ? "jsCenter" :""}}`}>
-						{/* {
-						     filterByCat().map( pic =><div className="wd300 "> <img src={"./assets/" + pic.src} /></div>  )
-						} */}
+					<div className={`pictures ${filter!==0 ? "jsCenter" :""}`}>
+						{ image && image.length>0 ?
+						     filterByCat().map( pic =><div className={`wd300 ${filter!==0 ? " pd15":""} `}> <img src={"./assets/" + pic.src} /></div>  )
+								:""
+						}
 					</div>
 				</div>
 			</div>
