@@ -27,7 +27,7 @@ function Portfolio({menu,image}) {
 				</div>
 					<div className={`pictures ${filter!==0 ? "jsCenter" :""}`}>
 						{ image && image.length>0 ?
-						     filterByCat().map( pic =><div className={`wd300 ${filter!==0 ? " pd15":""} `}> <img src={"./assets/" + pic.src} /></div>  )
+						     filterByCat().map( pic =><div className={`wd300 ${filter!==0 ? " pd15":""} `}> <img src={"/assets/img/" + pic.src} /></div>  )
 								:""
 						}
 					</div>

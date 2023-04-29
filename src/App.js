@@ -15,7 +15,7 @@ function App() {
   const  [sent, setSent] = useState({});
 
       useEffect(()=>{
-        fetch('./assets/myapp.json')
+        fetch('./assets/json/myapp.json')
         .then(resp => resp.json())
         .then(txt => setSent(txt))
       },[])

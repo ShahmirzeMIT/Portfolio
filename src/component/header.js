@@ -21,7 +21,7 @@ function Header({menu}) {
 			<nav>
 			<div className="menu wd-80">
 				<div>
-					<img src={"./assets/" + "logo.png"} />
+					<img src={"./assets/img/" + "logo.png"} />
 				</div>
 				<div className="rightList">
 					<ul>
@@ -103,7 +103,7 @@ function Header({menu}) {
 			</div>
 			<div className="face">
 				<div className="image">
-					<img src={"./assets/" + "greencard.jpeg"} />
+					<img src={"/assets/img/" + "greencard.jpeg"} />
 				</div>
 
 			</div>
