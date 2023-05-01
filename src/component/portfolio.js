@@ -1,10 +1,14 @@
+import { useContext } from "react"
 import styles from "../index.css"
 import { useState } from "react"
+import { DataContext } from "../App"
 
 
-function Portfolio({menu,image}) {
+function Portfolio() {
 	const [filter, setFilter] = useState(0)
-
+	const value=useContext(DataContext)
+	const menu=value.menu
+	const image=value.image
 	function filterByCat() {
 			 	return filter === 0 ? image :  image.filter( item => item.cat.includes(filter))
 	 }

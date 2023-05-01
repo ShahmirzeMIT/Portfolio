@@ -1,6 +1,13 @@
+import { useContext } from "react"
 import styles  from "../index.css"
+import { DataContext } from "../App"
 
-function Resume({education,experience,skill1,skill2}) {
+function Resume() {
+	const value=useContext(DataContext)
+	const education=value.education
+	const experience=value.experience
+	const skill1=value.skill1
+	const skill2=value.skill2
 	return(
 		<>
 			<section id="works">

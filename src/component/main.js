@@ -1,7 +1,9 @@
+import { useContext } from "react";
 import styles from "../index.css";
-function Main({information}) {
-
-	
+import { DataContext } from "../App";
+function Main() {
+const value=useContext(DataContext)
+const information=value.information
 	return(
 
 		<>

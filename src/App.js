@@ -8,28 +8,35 @@ import Footer from "./component/footer"
 import Slider from "./component/slider";
 import Header from "./component/header";
 import Main from "./component/main";
-import { useEffect } from "react";
+import {  useEffect } from "react";
 import { useState } from "react";
+import { createContext} from "react";
+
+
+export const DataContext=createContext()
+
 function App() {
-  
   const  [sent, setSent] = useState({});
       useEffect(()=>{
         fetch('./assets/json/myapp.json')
         .then(resp => resp.json())
         .then(txt => setSent(txt))
       },[])
+
     return (
       <>
-          <Header menu={sent.headerMenu} />
-          <Main information={sent.information}/>
-          <Projects project={sent.project} />
-          <Resume education={sent.education} experience={sent.experience} skill1={sent.skill1} skill2={sent.skill2}/>
-          <Portfolio menu={sent.menu} image={sent.image }/>
+      <DataContext.Provider value={sent}>
+          <Header/>
+          <Main/>
+          <Projects/>
+          <Resume/>
+          <Portfolio/>
           <Laptop/>
-          <Questions questionMenu={sent.questionMenu} />
-          <Slider slide={sent.slide}/>
+          <Questions/>
+          <Slider/>
           <Contact/>
           <Footer/>
+        </DataContext.Provider>
       </>
     );
     }

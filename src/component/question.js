@@ -1,8 +1,12 @@
+import { useContext } from "react"
 import styles from "../index.css"
 import Accordion from "./accordion"
+import { DataContext } from "../App"
  
  
-function Questions({questionMenu}){
+function Questions(){
+	const value=useContext(DataContext)
+	const questionMenu=value.questionMenu
 	return(
 		<>
 			<section id="question">

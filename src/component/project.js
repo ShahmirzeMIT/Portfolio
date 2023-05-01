@@ -1,7 +1,9 @@
+import { useContext } from "react"
 import styles from "../index.css"
 import {BsFillPaletteFill, BsDisplay} from "react-icons/bs"
 import {FaPencilRuler, FaChartArea , FaBullhorn} from 'react-icons/fa'
 import {HiPaintBrush} from 'react-icons/hi2'
+import { DataContext } from "../App"
 const logo=[
 		   {logo:<BsFillPaletteFill className='logos' />},
 		   {logo:<BsDisplay  className='logos'/>},
@@ -10,7 +12,9 @@ const logo=[
 		   {logo:<FaChartArea className='logos' />},
 		   {logo:<FaBullhorn className='logos' />}
 		]
-function Projects({project}) {
+function Projects() {
+	const value=useContext(DataContext)
+	const project=value.project
 	return(
 		<section className="bgGray" id="experience">
 			<div className="wd80 mrp5">		

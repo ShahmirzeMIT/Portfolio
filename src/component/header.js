@@ -5,15 +5,18 @@ import {AiOutlineArrowDown}  from "react-icons/ai"
 import{ FiMenu} from "react-icons/fi"
 import {BsArrowDownCircle, BsFacebook, BsInstagram, BsLinkedin ,BsReddit} from "react-icons/bs"
 import Typewriter from "typewriter-effect";
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Box, Button, ListItemText, MenuItem, MenuList, Modal, Paper, Typography } from '@mui/material';
+import App, { DataContext } from '../App';
 
 
-function Header({menu}) {
-
+function Header() {
 	const [open, setOpen] =useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
+	const value=useContext(DataContext)
+	const menu=value.headerMenu
+	
 	return(
 		<>
 		<header>

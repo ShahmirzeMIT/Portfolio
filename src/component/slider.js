@@ -1,7 +1,11 @@
 import styles from '../index.css'
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-function Slider({slide}){
+import { useContext } from 'react';
+import { DataContext } from '../App';
+function Slider(){
+        const value=useContext(DataContext)
+        const slide=value.slide
 	return(
 		<section className='grayS' id='slider'>
 			<div className='wd80Sl'>
