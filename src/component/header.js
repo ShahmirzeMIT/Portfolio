@@ -42,14 +42,13 @@ function Header() {
 								color:"white",
 								paddingTop:"5em"
 								}}>
-									 { 
-										 menu && menu.length > 0 ?
+									 {
 										menu.map(item=>
 										<MenuItem>
 											<ListItemText  onClick={handleClose}>
 												<a href={`#${item.id}`}>{item.menu}</a> 
 											</ListItemText>
-										</MenuItem>) :""
+										</MenuItem>)
 									} 
 									<MenuItem>
 										<ListItemText  onClick={handleClose}>

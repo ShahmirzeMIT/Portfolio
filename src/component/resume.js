@@ -22,7 +22,7 @@ function Resume() {
 						<div className="eductaion">
 						<h2 className="headtext">My Education</h2>
 							<div className="borderYellow">
-								{ education && education.length > 0 ?
+								{
 									education.map(item=>
 										<>
 											<div className="study">
@@ -33,7 +33,6 @@ function Resume() {
 											<hr/>
 										</>
 										)
-										:""
 								}
 							</div>
 						</div>
@@ -41,7 +40,6 @@ function Resume() {
 						<h2 className="headtext">My Experience</h2>
 							<div className="borderYellow">
 								{
-									experience && experience.length > 0 ?
 									experience.map(item=>
 									<>
 										<div className="study">
@@ -51,7 +49,7 @@ function Resume() {
 										</div>
 										<hr/>
 									</>
-									):""
+									)
 									}
 							</div>
 						</div>

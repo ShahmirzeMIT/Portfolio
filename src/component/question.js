@@ -17,10 +17,9 @@ function Questions(){
 							<p className="whatC">Have any questions?</p>
 							<div className="openQuestion">
 								<div className="opendiv">
-									{ questionMenu && questionMenu.length > 0 ?
+									{ 
 										questionMenu.map(item=> <Accordion title={item.title}>{item.text}</Accordion>)
-										:""
-								}
+									}
 								</div>
 
 							</div>

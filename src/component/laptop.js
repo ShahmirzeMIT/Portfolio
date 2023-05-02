@@ -5,9 +5,7 @@ function Laptop(){
 		<>
 			<section className="psR">
 				<div className="lapimg">
-					
 					<img src={"/assets/img/" + "laptop.jpg"} />
-					
 				</div>
 				<div className="shadow"></div>
 				<div className="word">

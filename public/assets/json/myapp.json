@@ -82,7 +82,7 @@
 		{ "src":"project-1.jpg", "cat":[1] },
 		{ "src":"project-2.jpg", "cat":[2] },
 		{ "src":"project-3.jpg", "cat":[3] },
-		{ "src":"project-4.jpg", "cat":[4] },
+		{ "src":"project-4.jpg", "cat":[3,4] },
 		{ "src":"project-5.jpg", "cat":[2] },
 		{ "src":"project-6.jpg", "cat":[1] }
 	],

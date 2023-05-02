@@ -13,7 +13,7 @@ function Slider(){
 				<h1 className='whiteS'>What Some of my Clients Say</h1>
                 <Carousel>
                    
-                 { slide && slide.length > 0 ?
+                 {
                                         slide.map(item=> 
                                                         <Carousel.Item>
                                                         <p className="wd50P">{item.text}</p> 
@@ -24,7 +24,6 @@ function Slider(){
                                                         <p>{item.workPlace}</p>
                                                         </Carousel.Item>
                                         )
-                                        : ""
                         }   
                 </Carousel>
 		</div>

@@ -16,7 +16,20 @@ import { createContext} from "react";
 export const DataContext=createContext()
 
 function App() {
-  const  [sent, setSent] = useState({});
+  const  [sent, setSent] = useState(
+    {
+      "headerMenu":[],
+      "information":[],
+      "project":[],
+      "menu":[],
+      "image":[],
+      "questionMenu":[],
+      "slide":[],
+      "education":[],
+      "skill1":[],
+      "skill2":[]
+    }
+  );
       useEffect(()=>{
         fetch('./assets/json/myapp.json')
         .then(resp => resp.json())
@@ -24,21 +37,19 @@ function App() {
       },[])
 
     return (
-      <>
-      <DataContext.Provider value={sent}>
-          <Header/>
-          <Main/>
-          <Projects/>
-          <Resume/>
-          <Portfolio/>
-          <Laptop/>
-          <Questions/>
-          <Slider/>
-          <Contact/>
-          <Footer/>
-        </DataContext.Provider>
-      </>
-    );
+        <DataContext.Provider value={sent}>
+            <Header/>
+            <Main/>
+            <Projects/>
+            <Resume/>
+            <Portfolio/>
+            <Laptop/>
+            <Questions/>
+            <Slider/>
+            <Contact/>
+            <Footer/>
+          </DataContext.Provider>
+      );
     }
 
     export default App;     

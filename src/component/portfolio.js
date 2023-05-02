@@ -23,16 +23,14 @@ function Portfolio() {
 				<h1>Some of my most recent projects</h1>
 				<div className="pickOut">
 					<ul>
-						{ menu  && menu.length > 0 ?
+						{
 							menu.map( (item,i) => <li onClick={ () => setFilter(i) }>{item}</li>)
-							:""
 						}
 					</ul>
 				</div>
 					<div className={`pictures ${filter!==0 ? "jsCenter" :""}`}>
-						{ image && image.length>0 ?
+						{
 						     filterByCat().map( pic =><div className={`wd300 ${filter!==0 ? " pd15":""} `}> <img src={"/assets/img/" + pic.src} /></div>  )
-								:""
 						}
 					</div>
 				</div>

@@ -14,6 +14,7 @@ const logo=[
 		]
 function Projects() {
 	const value=useContext(DataContext)
+	
 	const project=value.project
 	return(
 		<section className="bgGray" id="experience">
@@ -26,9 +27,8 @@ function Projects() {
 			</div>
 			<div className="course">
 				<div className="design">
-					{ project && project.length > 0 ?
-						project.map((item,i)=>
-						<div className="txtCenter">
+					{project.map((item,i) => (
+							<div className="txtCenter">
 							<div>
 							{logo[i].logo}
 							</div>
@@ -38,8 +38,9 @@ function Projects() {
 							<p className="text">
 							{item.text}
 							</p>
-						</div>) :""
-					}
+						</div>
+						)
+						)}
 					
 				</div>
 				

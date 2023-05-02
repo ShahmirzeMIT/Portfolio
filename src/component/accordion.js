@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown,faChevronUp} from '@fortawesome/free-solid-svg-icons'
+import { 	faChevronDown,faChevronUp} from '@fortawesome/free-solid-svg-icons'
 import {  useState } from "react"
 
  function Accordion({title,children}){
