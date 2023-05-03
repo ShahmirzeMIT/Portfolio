@@ -18,7 +18,7 @@ function Questions(){
 							<div className="openQuestion">
 								<div className="opendiv">
 									{ 
-										questionMenu.map(item=> <Accordion title={item.title}>{item.text}</Accordion>)
+										questionMenu.map((item,i)=> <Accordion key={i} title={item.title}>{item.text}</Accordion>)
 									}
 								</div>
 

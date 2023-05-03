@@ -23,12 +23,12 @@ function Resume() {
 						<h2 className="headtext">My Education</h2>
 							<div className="borderYellow">
 								{
-									education.map(item=>
+									education.map((item,i)=>
 										<>
-											<div className="study">
-											<h3 className="head">{item.schoolName}</h3>
-											<p className="txt">{item.year}</p>
-											<p className="txt">{item.text}</p>
+											<div className="study" key={i} >
+											<h3 className="head" >{item.schoolName}</h3>
+											<p className="txt" >{item.year}</p>
+											<p className="txt" >{item.text}</p>
 											</div>
 											<hr/>
 										</>
@@ -40,12 +40,12 @@ function Resume() {
 						<h2 className="headtext">My Experience</h2>
 							<div className="borderYellow">
 								{
-									experience.map(item=>
+									experience.map((item,i)=>
 									<>
-										<div className="study">
-										<h3 className="head">{item.workName}</h3>
-										<p className="txt">{item.year}</p>
-										<p className="txt">{item.text}</p>
+										<div className="study"  key={i}>
+										<h3 className="head" >{item.workName}</h3>
+										<p className="txt" >{item.year}</p>
+										<p className="txt" >{item.text}</p>
 										</div>
 										<hr/>
 									</>
@@ -61,37 +61,35 @@ function Resume() {
 						<div className="skill">
 							<div className="eductaion">
 							{
-								skill1 && skill1.length > 0 ?
-								skill1.map(item=>
+								skill1.map((item,i)=>
 									<>
-										<div className="mr1">
-											<div className="d-flex">
-												<p className="font">{item.know}</p>
-												<p>{item.percent}%</p>
+										<div className="mr1"   key={i}>
+											<div className="d-flex" >
+												<p className="font"  >{item.know}</p>
+												<p  >{item.percent}%</p>
 											</div>
-											<div className="yellowLine mr1 ">
-												<div className={`wd${item.percent} h6`}></div>
+											<div className="yellowLine mr1 "  >
+												<div className={`wd${item.percent} h6`}  key={i}></div>
 											</div>
 										</div>
 									</>
-									) :""}
+									)}
 							</div>
 							<div className="experience">
-							{ skill2 && skill2.length > 0 ?
-								skill2.map(item=>
+							{
+								skill2.map((item,i)=>
 									<>
-										<div className="mr1">
-											<div className="d-flex">
-												<p className="font">{item.know}</p>
-												<p>{item.percent}%</p>
+										<div className="mr1"  key={i}>
+											<div className="d-flex"  >
+												<p className="font" >{item.know}</p>
+												<p >{item.percent}%</p>
 											</div>
 											<div className="yellowLine mr1 ">
-												<div className={`wd${item.percent} h6`}></div>
+												<div className={`wd${item.percent} h6`} key={i} ></div>
 											</div>
 										</div>
 									</>
 									)
-									:""
 									}
 							</div>
 						</div>

@@ -43,7 +43,7 @@ code {
 	flex-wrap: wrap;
  }
  
- .rightList ul li:last-child {
+ .rightList ul li:nth-child(2) {
 	font-size: 25px;
 	padding-left: 10px;
 	padding-bottom: 10px;
@@ -448,6 +448,9 @@ code {
     border: 2px solid black;
     transition: all 1s;
     color: black;
+}
+.pd0{
+  padding: 0 !important;
 }
 .download a{
   text-decoration: none;

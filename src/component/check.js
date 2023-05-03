@@ -38,7 +38,7 @@ function Check() {
 								if(item.cat.includes(open)){
 									return(
 										<div className="wd300">
-										<img src={"./assets/" + item.src} />
+										<img src={"./assets/img/" + item.src} />
 										</div>
 									)
 									

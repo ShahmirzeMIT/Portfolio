@@ -28,7 +28,7 @@ function Projects() {
 			<div className="course">
 				<div className="design">
 					{project.map((item,i) => (
-							<div className="txtCenter">
+							<div className="txtCenter" key={i}>
 							<div>
 							{logo[i].logo}
 							</div>

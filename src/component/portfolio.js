@@ -24,13 +24,13 @@ function Portfolio() {
 				<div className="pickOut">
 					<ul>
 						{
-							menu.map( (item,i) => <li onClick={ () => setFilter(i) }>{item}</li>)
+							menu.map( (item,i) => <li key={i} onClick={ () => setFilter(i) }>{item}</li>)
 						}
 					</ul>
 				</div>
 					<div className={`pictures ${filter!==0 ? "jsCenter" :""}`}>
 						{
-						     filterByCat().map( pic =><div className={`wd300 ${filter!==0 ? " pd15":""} `}> <img src={"/assets/img/" + pic.src} /></div>  )
+						     filterByCat().map( (pic,i) =><div key={i} className={`wd300 ${filter!==0 ? " pd15":""} `}> <img src={"/assets/img/" + pic.src} /></div>  )
 						}
 					</div>
 				</div>

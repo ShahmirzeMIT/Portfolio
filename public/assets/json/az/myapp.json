@@ -1,0 +1,197 @@
+{
+	"headerMenu":[
+		{
+			"menu":"Ev",
+			"id":"home"
+		},
+		{
+			"menu":"Haqqimizda",
+			"id":"know"
+		},
+		{
+			"menu":"Nə edirem",
+			"id":"experience"
+		},
+		{
+			"menu":"CV",
+			"id":"works"
+		},
+		{
+			"menu":"Portofilo",
+			"id":"project"
+		},
+		{
+			"menu":"FAQ",
+			"id":"question"
+		},
+		{
+			"menu":"Alici sozleri",
+			"id":"slider"
+		},
+		{
+			"menu":"Mənimlə əlaqə",
+			"id":"contact"
+		}
+	],
+	"information":[
+		{
+			"target":"Ad:",
+			"inf":"Shahmirze Mammadyarlı"
+		},
+		{
+			"target":"Email:",
+			"inf":"shahmirzememmedyarov@gmail.com"
+		},
+		{
+			"target":"Doğum ili:",
+			"inf":"15 August,2003"
+		},
+		{
+			"target":"Yasayiş yeri:",
+			"inf":"Baku,Azerbijan"
+		}
+	],
+	"project":[
+		{
+			"work":"Grafik Dizayner ",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum sənayenin standart dummy mətni olmuşdur."
+		},
+		{
+			"work":"Web Dizyn",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum sənayenin standart dummy mətni olmuşdur."
+		},
+		{
+			"work":"UI/UX Dizayn",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum sənayenin standart dummy mətni olmuşdur."
+		},
+		{
+			"work":"App Dizayn & Develop",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum sənayenin standart dummy mətni olmuşdur."
+		},
+		{
+			"work":"Business Analist",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum sənayenin standart dummy mətni olmuşdur."
+		},
+		{
+			"work":"SEO Marketing",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum sənayenin standart dummy mətni olmuşdur."
+		}	
+	],
+	"menu":["Hamisi","Detallar","Mockups","YouTube Videolari","Vime Videolari"],
+	"image":[
+		{ "src":"project-1.jpg", "cat":[1] },
+		{ "src":"project-2.jpg", "cat":[2] },
+		{ "src":"project-3.jpg", "cat":[3] },
+		{ "src":"project-4.jpg", "cat":[3,4] },
+		{ "src":"project-5.jpg", "cat":[2] },
+		{ "src":"project-6.jpg", "cat":[1] }
+	],
+	"questionMenu":[
+		{
+			"title":"  Nədir Callum?",
+			"text":"Lisque persius onun və quotadam persequeris vim, ad mea essent possim iriure ilə maraqlanır. Mutat tacimates id oturur. Ridens adiocritatem ius and eu nec magna imperdiet."
+		},
+		{
+			"title":"   Nece Komek ede bilerem sene?",
+			"text":"Lisque persius onun və quotadam persequeris vim, ad mea essent possim iriure ilə maraqlanır. Mutat tacimates id oturur. Ridens adiocritatem ius and eu nec magna imperdiet."
+		},
+		{
+			"title":"  İş axını üçün sadə proses?",
+			"text":"Lisque persius onun və quotadam persequeris vim, ad mea essent possim iriure ilə maraqlanır. Mutat tacimates id oturur. Ridens adiocritatem ius and eu nec magna imperdiet."
+		},
+		{
+			"title":"  Callum çox məqsədli şablondur?",
+			"text":"Lisque persius onun və quotadam persequeris vim, ad mea essent possim iriure ilə maraqlanır. Mutat tacimates id oturur. Ridens adiocritatem ius and eu nec magna imperdiet."
+		},
+		{
+			"title":"   niye responsive olmaldir template?",
+			"text":"Lisque persius onun və quotadam persequeris vim, ad mea essent possim iriure ilə maraqlanır. Mutat tacimates id oturur. Ridens adiocritatem ius and eu nec magna imperdiet."
+		}
+	 ],
+
+	"slide":[
+			{
+				"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Təxminən bibendum və ya daha çox. Donec euismod, velit və ya lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit və ya nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl and ante. Sed auctor enim sed enim ultrices, ya da suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis. ",
+				"src":"greencard.jpeg",
+				"fullName":"Shahmirze Mammadyarli",
+				"workPlace":"Freelancer  Bakidan"
+			},
+			{
+				"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Təxminən bibendum və ya daha çox. Donec euismod, velit və ya lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit və ya nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl and ante. Sed auctor enim sed enim ultrices, ya da suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis. ",
+				"src":"john.jpg",
+				"fullName":"Keanu Reews",
+				"workPlace":"Freelancer  Canadadan"
+			},
+			{
+				"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Təxminən bibendum və ya daha çox. Donec euismod, velit və ya lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit və ya nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl and ante. Sed auctor enim sed enim ultrices, ya da suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis. ",
+				"src":"heath.jpg",
+				"fullName":"Heath Ledger",
+				"workPlace":"Freelancer Heavendan"
+			}
+	],
+	"education":[
+		{
+			"schoolName":"Master in Computer Engineering",
+			"year":"Harvard University / 2015 - 2017",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum saxta mətn olmuşdur."
+		},
+		{
+			"schoolName":"Bachelor in Computer Engineering",
+			"year":"University of California / 2014 - 2015",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum saxta mətn olmuşdur."
+		},
+		{
+			"schoolName":"International Science",
+			"year":"Harvard University / 2013 - 2014",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum saxta mətn olmuşdur."
+		}
+
+	],
+	"experience":[
+		{
+			"workName":"Sr. Font End Developer",
+			"year":"Apple Inc / 2020 - current",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum saxta mətn olmuşdur."
+		},
+		{
+			"workName":"Jr. Font End Developer",
+			"year":"Dribbble Inc / 2018 - 2020",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum saxta mətn olmuşdur."
+		},
+		{
+			"workName":"HTML Developer",
+			"year":"Adobe Inc / 2017 - 2018",
+			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum saxta mətn olmuşdur."
+		}
+
+	],
+	"skill1":[
+		{
+			"know":"Web Design",
+			"percent":"65"
+		},
+		{
+			"know":"Javascript",
+			"percent":"80"
+		},
+		{
+			"know":"Angular Js",
+			"percent":"60"
+		}
+	],
+	"skill2":[
+		{
+			"know":"HTML/CSS",
+			"percent":"95"
+		},
+		{
+			"know":"React Js",
+			"percent":"70"
+		},
+		{
+			"know":"Bootstrap",
+			"percent":"99"
+		}
+
+	]
+}

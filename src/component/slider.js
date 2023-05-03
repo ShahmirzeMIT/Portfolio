@@ -14,8 +14,8 @@ function Slider(){
                 <Carousel>
                    
                  {
-                                        slide.map(item=> 
-                                                        <Carousel.Item>
+                                        slide.map((item,i)=> 
+                                                        <Carousel.Item key={i}>
                                                         <p className="wd50P">{item.text}</p> 
                                                         <div className="littleImg"> 
                                                         <img src={"/assets/img/" +item.src } />

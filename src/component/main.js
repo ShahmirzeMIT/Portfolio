@@ -28,12 +28,12 @@ const information=value.information
 			<div className="Elaqe">
 				<div className="nameEm wd-600 mr-auto" >
 					{
-						information.map((item,i)=> i===0 ||i===1 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
+						information.map((item,i)=> i===0 ||i===1 ?  <div className="mr-auto600" key={i}><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
 					}
 				</div>
 				<div className="nameEm wd-400 mr-auto" >
 					{
-						information.map((item,i)=> i===2 ||i===3 ?  <div className="mr-auto600"><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
+						information.map((item,i)=> i===2 ||i===3 ?  <div className="mr-auto600" key={i}><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
 					}
 				</div>
 			</div>

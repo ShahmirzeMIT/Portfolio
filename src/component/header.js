@@ -7,20 +7,19 @@ import {BsArrowDownCircle, BsFacebook, BsInstagram, BsLinkedin ,BsReddit} from "
 import Typewriter from "typewriter-effect";
 import { useContext, useState } from 'react';
 import { Box, Button, ListItemText, MenuItem, MenuList, Modal, Paper, Typography } from '@mui/material';
-import App, { DataContext } from '../App';
+import App, { DataContext, LanguageContext} from '../App';
 
-
-function Header() {
+export const Header=()=> {
 	const [open, setOpen] =useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
 	const value=useContext(DataContext)
 	const menu=value.headerMenu
+	const [lang,setLang]=useContext(LanguageContext)
 	
 	return(
 		<>
 		<header>
-
 			<nav>
 			<div className="menu wd-80">
 				<div>
@@ -42,10 +41,10 @@ function Header() {
 								color:"white",
 								paddingTop:"5em"
 								}}>
-									 {
-										menu.map(item=>
-										<MenuItem>
-											<ListItemText  onClick={handleClose}>
+									{
+										menu.map((item,i)=>
+										<MenuItem  key={i} >
+											<ListItemText  onClick={handleClose} >
 												<a href={`#${item.id}`}>{item.menu}</a> 
 											</ListItemText>
 										</MenuItem>)
@@ -69,6 +68,8 @@ function Header() {
 							</Box>
 						</Modal>
 						</li>
+						<li><Button className="pd0" onClick={()=>setLang("en")}>En</Button></li>	
+						<li><Button className="pd0" onClick={()=>setLang("az")}>Az</Button></li>	
 					</ul>
 				</div>
 			</div>
@@ -114,9 +115,7 @@ function Header() {
 				<a href='#know'><AiOutlineArrowDown  className='animasiya'  /></a>
 			</div>
 		</header>
-
+		
 		</>
 	)
 }
-
-export default Header
