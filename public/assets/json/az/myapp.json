@@ -1,4 +1,16 @@
 {
+	"header":[
+		{
+			"message":"SALAM FREELANSERƏM",
+			"typewriter1":"DİZAYNER",
+			"typewriter2":"DEVELOPER",
+			"typewriter3":"CALLUM",
+			"location":"Yer Baku, Azerbaijan",
+			"works":"Mənim İşlərimə Bax",
+			"contact":"Mənimlə Əlaqə"
+		}
+		
+	],
 	"headerMenu":[
 		{
 			"menu":"Ev",

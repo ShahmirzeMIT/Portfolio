@@ -15,8 +15,9 @@ export const Header=()=> {
 	const handleClose = () => setOpen(false);
 	const value=useContext(DataContext)
 	const menu=value.headerMenu
+	const header=value.header
 	const [lang,setLang]=useContext(LanguageContext)
-	
+	console.log(lang)
 	return(
 		<>
 		<header>
@@ -76,33 +77,30 @@ export const Header=()=> {
 			</nav>
 			<div className="content wd-80 p4em">
 			<div className="openword">
-				<h1>HI, I'M A FREELANCER</h1>
-				<div  className="typewriter">
+				{header.map((item,i)=><>
+					<h1 className={`${lang==="az"?"fs28":""}`}>{item.message}</h1>
+	
+					<div  className="typewriter">
 					<Typewriter
 							onInit={(typewriter)=> {
 							typewriter
-								.typeString("DESIGNER")
+								.typeString(`${item.typewriter1}`)
 								.pauseFor(1000)
 								.deleteAll()
-								.typeString("DEVELOPER")
+								.typeString(`${item.typewriter2}`)
 								.pauseFor(1000)
 								.deleteAll()
-								.typeString("CALLUM")
-								.start();
-							
-								}
-							}
+								.typeString(`${item.typewriter3}`)
+								.start();}}
 						/>	
 				</div>
-				
-				<p>based in Baku, Azerbaijan</p>
+				<p>{item.location}</p>
 				<div className="contact">
-					<a href="#works">Veiw my Works</a>
-					<a href="#contact">Contact Me 
-					<span><BsArrowDownCircle/></span> 
-					
-					</a>
+					<a href="#works" >{item.works}</a>
+					<a href="#contact"  >{item.contact}<span><BsArrowDownCircle/></span></a>
 				</div>
+				</> )}
+				
 			</div>
 			<div className="face">
 				<div className="image">

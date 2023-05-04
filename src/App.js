@@ -19,7 +19,7 @@ export const DataContext=createContext()
   export const App=()=> {
     const [lang, setLang] = useState("en");
     const  [sent, setSent] = useState(
-      {
+      { "header":[],
         "headerMenu":[],
         "information":[],
         "project":[],
@@ -33,8 +33,6 @@ export const DataContext=createContext()
         "skill2":[]
       }
     );
-
-  
     useEffect(()=>{
           fetch(`./assets/json/${lang}/myapp.json`)
           .then(resp => resp.json())
@@ -57,7 +55,6 @@ export const DataContext=createContext()
               <Slider/>
               <Contact/>
               <Footer/>
-              <Check/>
             </DataContext.Provider>
             </LanguageContext.Provider>
         );

@@ -38,6 +38,7 @@ code {
 	margin: 0 auto;
  }
  
+ 
  .rightList ul {
 	display: flex;
 	flex-wrap: wrap;
@@ -52,6 +53,7 @@ code {
  .rightList ul li:first-child {
 	font-size: 1.25em;
  }
+
  
  .content {
 	display: flex;
@@ -66,7 +68,7 @@ code {
  }
  
  .openword>h1 {
-	font-size: calc(1.425rem + 2.1vw)!important;
+	font-size: 2.8em;
 	font-weight: 100!important;
  }
  

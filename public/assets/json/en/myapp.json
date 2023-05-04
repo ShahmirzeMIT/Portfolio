@@ -1,4 +1,21 @@
 {
+	"header":[
+		{
+			"message":"HI, I'M A FREELANCER",
+			"typewriter1":"DESIGNER",
+			"typewriter2":"DEVELOPER",
+			"typewriter3":"CALLUM",
+			"location":"based in Baku, Azerbaijan",
+			"works":"Veiw my Works",
+			"contact":"Contact Me"
+		}
+		
+	],
+	"menu":[
+		{
+
+		}
+	],
 	"headerMenu":[
 		{
 			"menu":"Home",
