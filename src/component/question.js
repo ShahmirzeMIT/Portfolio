@@ -7,14 +7,20 @@ import { DataContext } from "../App"
 function Questions(){
 	const value=useContext(DataContext)
 	const questionMenu=value.questionMenu
+	const question=value.question
 	return(
 		<>
 			<section id="question">
 				<div>
 					<div className="question">
 						<div className="openQ">
-							<div><div className="faq">FAQ</div></div>
-							<p className="whatC">Have any questions?</p>
+						{
+                                        question.map(item=><>
+									<div><div className="faq">{item.target}</div></div>
+									<p className="whatC">{item.text}</p>
+                                        </>)
+                                }
+							
 							<div className="openQuestion">
 								<div className="opendiv">
 									{ 

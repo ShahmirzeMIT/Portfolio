@@ -1,6 +1,10 @@
+import { useContext } from "react"
 import styles from "../index.css"
+import { DataContext } from "../App"
 
 function Laptop(){
+	const value=useContext(DataContext)
+	const laptop=value.laptop
 	return(
 		<>
 			<section className="psR">
@@ -9,8 +13,13 @@ function Laptop(){
 				</div>
 				<div className="shadow"></div>
 				<div className="word">
-					<h1 className="white">Interested in working with me?</h1>
-					<div className="btn1"><button>Hire Me!</button></div>
+					{
+						laptop.map(item=>
+						<>
+							<h1 className="white">{item.target}</h1>
+							<div className="btn1"><button>{item.hire}!</button></div>
+						</>)
+					}
 				</div>
 			</section>
 		</>

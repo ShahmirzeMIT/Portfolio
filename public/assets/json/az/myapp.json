@@ -11,6 +11,17 @@
 		}
 		
 	],
+	"mainMenu":[
+		{
+			"call":"Salam Mən ",
+			"name":"Shahmirze Mammadyarli",
+			"work":"Mən veb dizayna həvəsi olan dizayner və tərtibatçıyam. Mən son istifadəçiyə real dəyər verən sadə, təmiz və hamar vebsaytlar hazırlamaqdan həzz alıram. Mənimlə işləyərkən minlərlə müştəri müstəsna nəticələr əldə etdi. Müştərinin tələblərinə cavab verən işlərin vaxtında və büdcə daxilində çatdırılması bizim motodur.",
+			"experience":"Təcrübə",
+			"years":"İl ",
+			"aboutMe":"Mənim Haqqimda",
+			"know":"Daha Çox tanı"
+		}
+	],
 	"headerMenu":[
 		{
 			"menu":"Ev",
@@ -63,13 +74,19 @@
 			"inf":"Baku,Azerbijan"
 		}
 	],
+	"projectData":[
+		{
+			"target":"Nə edirəm?",
+			"text":"Sənin sonraki proyektinde nece komek ede bilerem?"
+		}
+	],
 	"project":[
 		{
-			"work":"Grafik Dizayner ",
+			"work":"Grafik Dizayner",
 			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum sənayenin standart dummy mətni olmuşdur."
 		},
 		{
-			"work":"Web Dizyn",
+			"work":"Web Dizayn",
 			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum sənayenin standart dummy mətni olmuşdur."
 		},
 		{
@@ -89,6 +106,12 @@
 			"text":"Lorem Ipsum sadəcə çap və çap sənayesinin saxta mətnidir. Lorem Ipsum sənayenin standart dummy mətni olmuşdur."
 		}	
 	],
+	"portfolio":[
+		{
+			"target":"Portfolyo",
+			"text":"Ən son layihələrimdən bəziləri"
+		}
+	],
 	"menu":["Hamisi","Detallar","Mockups","YouTube Videolari","Vime Videolari"],
 	"image":[
 		{ "src":"project-1.jpg", "cat":[1] },
@@ -97,6 +120,18 @@
 		{ "src":"project-4.jpg", "cat":[3,4] },
 		{ "src":"project-5.jpg", "cat":[2] },
 		{ "src":"project-6.jpg", "cat":[1] }
+	],
+	"laptop":[
+		{
+			"target":"Mənimlə işləmək maraqlıdır?",
+			"hire":"Məni işə götür"
+		}
+	],
+	"question":[
+		{
+			"target":"FAQ",
+			"text":"Her Hansi Sual Var?"
+		}
 	],
 	"questionMenu":[
 		{
@@ -116,11 +151,17 @@
 			"text":"Lisque persius onun və quotadam persequeris vim, ad mea essent possim iriure ilə maraqlanır. Mutat tacimates id oturur. Ridens adiocritatem ius and eu nec magna imperdiet."
 		},
 		{
-			"title":"   niye responsive olmaldir template?",
+			"title":"   Niye responsive olmaldir template?",
 			"text":"Lisque persius onun və quotadam persequeris vim, ad mea essent possim iriure ilə maraqlanır. Mutat tacimates id oturur. Ridens adiocritatem ius and eu nec magna imperdiet."
 		}
 	 ],
-
+	 
+	 "sliderTarget":[
+		{
+			"target":"Müştəri Rəyi",
+			"text":"Bəzi Müştərilərimin Dedikləri"
+		}
+	],
 	"slide":[
 			{
 				"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Təxminən bibendum və ya daha çox. Donec euismod, velit və ya lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit və ya nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl and ante. Sed auctor enim sed enim ultrices, ya da suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis. ",
@@ -140,6 +181,16 @@
 				"fullName":"Heath Ledger",
 				"workPlace":"Freelancer Heavendan"
 			}
+	],
+	"resume":[
+		{
+			"target":"CV",
+			"text":"Mənim CV-nin xülasəsi",
+			"experience":"Mənim Təcrübəm",
+			"education":"Mənim Təhsilim",
+			"skill":"Mənim Bacariqlarım",
+			"download":"Yüklə"
+		}
 	],
 	"education":[
 		{
@@ -205,5 +256,24 @@
 			"percent":"99"
 		}
 
+	],
+	"contact1":[
+		{
+			"title":"Gəlin əlaqə saxlayaq",
+			"text":"Yeni layihələri və dizayn problemlərini müzakirə etməkdən zövq alıram. Zəhmət olmasa mümkün qədər çox məlumat paylaşın ki, ilk görüşümüzdən maksimum yararlana bilək.",
+			"locationName":"Yaşayış",
+			"location":"Baku, 20 Yanvar Moskva Prospekti 52",
+			"contact":"Whatsapp",
+			"call":"(+994) 55 698 45 46"
+		}
+	],
+	"contact2":[
+		{
+			"title":"Layihənizi qiymətləndirin",
+			"name":"Adın nədir?",
+			"email":"E-poçt ünvanınız?",
+			"help":"Sizə necə kömək edə bilərəm?",
+			"send":"göndər"
+		}
 	]
 }

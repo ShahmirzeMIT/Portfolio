@@ -9,6 +9,7 @@ function Portfolio() {
 	const value=useContext(DataContext)
 	const menu=value.menu
 	const image=value.image
+	const portfolio=value.portfolio
 	function filterByCat() {
 			 	return filter === 0 ? image :  image.filter( item => item.cat.includes(filter))
 	 }
@@ -17,10 +18,15 @@ function Portfolio() {
 		<section id='project'>
 			<div className="bgBeige">
 				<div className="contentP">
-				<div className="centr">
-					<div className="Portfolio ">Portfolio</div>
-				</div>
-				<h1>Some of my most recent projects</h1>
+					{
+						portfolio.map(item=><>
+						<div className="centr">
+						<div className="Portfolio ">{item.target}</div>
+						</div>
+						<h1>{item.text}</h1>
+						</>)
+					}
+				
 				<div className="pickOut">
 					<ul>
 						{

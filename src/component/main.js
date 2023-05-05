@@ -4,27 +4,35 @@ import { DataContext } from "../App";
 function Main() {
 const value=useContext(DataContext)
 const information=value.information
+const mainMenu=value.mainMenu
+console.log(mainMenu)
 	return(
 
 		<>
 		<main id="know">
 		<div className="wd-80">
-			<div className="aboutme ">
-					<p>About Me</p>
+			{
+				mainMenu.map(item=>
+				<>
+				<div className="aboutme ">
+				<p>{item.aboutMe}</p>
+		</div>
+			<h1>{item.know}</h1>
+			<div className="Know">
+				<article>
+					<h2>{item.call} <span>{item.name}</span></h2>
+					<p className="pt2">
+						{item.work}
+					</p>
+				</article>
+				<article>
+						<div>2<p className="bgYellow"></p></div>
+						<h2>{item.years} <span style={{fontWeight:700}}>{item.experience}</span> </h2>
+				</article>
 			</div>
-				<h1>Know Me More</h1>
-				<div className="Know">
-					<article>
-						<h2>Hi, I'm <span>Shahmirze Mammadyarli</span></h2>
-						<p className="pt2">
-							I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.
-						</p>
-					</article>
-					<article>
-							<div>2<p className="bgYellow"></p></div>
-							<h2>Years of <span style={{fontWeight:700}}>Experiance</span> </h2>
-					</article>
-				</div>
+			</>)
+			}
+			
 			<div className="Elaqe">
 				<div className="nameEm wd-600 mr-auto" >
 					{

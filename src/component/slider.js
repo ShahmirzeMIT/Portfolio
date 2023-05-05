@@ -6,11 +6,16 @@ import { DataContext } from '../App';
 function Slider(){
         const value=useContext(DataContext)
         const slide=value.slide
+        const sliderTarget=value.sliderTarget
 	return(
 		<section className='grayS' id='slider'>
 			<div className='wd80Sl'>
-				<div className='client'><div>Client Speak</div></div>
-				<h1 className='whiteS'>What Some of my Clients Say</h1>
+                                {
+                                        sliderTarget.map((item,i)=><>               
+				                <div className='client' key={i}><div>{item.target}</div></div>
+				                <h1 className='whiteS'  key={i}>{item.text}</h1> 
+                                        </>)
+                                }
                 <Carousel>
                    
                  {

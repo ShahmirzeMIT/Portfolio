@@ -14,16 +14,21 @@ const logo=[
 		]
 function Projects() {
 	const value=useContext(DataContext)
-	
 	const project=value.project
+	const projectData=value.projectData
 	return(
 		<section className="bgGray" id="experience">
 			<div className="wd80 mrp5">		
 			<div className="whatBtn mr5 mrp5 wd80" >
+			{
+				projectData.map(item=><>
 				<p className="">
-					What I do?
+					{item.target}
 				</p>
-				<h1>How I can help your next project</h1>
+				<h1>{item.text}</h1>
+				</>)
+			}
+				
 			</div>
 			<div className="course">
 				<div className="design">

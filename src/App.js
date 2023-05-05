@@ -20,17 +20,26 @@ export const DataContext=createContext()
     const [lang, setLang] = useState("en");
     const  [sent, setSent] = useState(
       { "header":[],
+        "mainMenu":[],
         "headerMenu":[],
         "information":[],
+        "projectData":[],
         "project":[],
+        "portfolio":[],
         "menu":[],
         "image":[],
+        "laptop":[],
+        "question":[],
         "questionMenu":[],
+        "sliderTarget":[],
         "slide":[],
+        "resume":[],
         "education":[],
         "experience":[],
         "skill1":[],
-        "skill2":[]
+        "skill2":[],
+        "contact1":[],
+        "contact2":[]
       }
     );
     useEffect(()=>{

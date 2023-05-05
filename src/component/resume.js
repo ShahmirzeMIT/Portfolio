@@ -8,19 +8,29 @@ function Resume() {
 	const experience=value.experience
 	const skill1=value.skill1
 	const skill2=value.skill2
+	const resume=value.resume
 	return(
 		<>
 			<section id="works">
 				<div className="wd80 pt5">
 					<div>
-						<div className="resume">
-							Resume
-						</div>
-						<h1>A summary of My Resume</h1>
+						{
+							resume.map(item=><>
+								<div className="resume">
+									{item.target}
+								</div>
+								<h1>{item.text}</h1>
+							</>)
+						}
 					</div>
 					<div className="about">
 						<div className="eductaion">
-						<h2 className="headtext">My Education</h2>
+						{
+							resume.map(item=><>
+								<h2 className="headtext">{item.education}</h2>
+							</>)
+						}
+						
 							<div className="borderYellow">
 								{
 									education.map((item,i)=>
@@ -37,7 +47,11 @@ function Resume() {
 							</div>
 						</div>
 						<div className="experience">
-						<h2 className="headtext">My Experience</h2>
+						{
+							resume.map(item=><>
+								<h2 className="headtext">{item.experience}</h2>
+							</>)
+						}
 							<div className="borderYellow">
 								{
 									experience.map((item,i)=>
@@ -57,7 +71,11 @@ function Resume() {
 					<div>
 						
 						<div >
-						<h2 className="headtext pd1b orta">My Skills</h2>
+						{
+							resume.map(item=><>
+								<h2 className="headtext">{item.skill}</h2>
+							</>)
+						}
 						<div className="skill">
 							<div className="eductaion">
 							{
@@ -97,7 +115,12 @@ function Resume() {
 						</div>
 					</div>
 					<div className="tcenter">
-						<div className="download"><a href="./assets/cv/cv.pdf" download>Download CV</a> </div>
+						{
+							resume.map(item=><>
+								<div className="download"><a href="./assets/cv/cv.pdf" download>{item.download}</a></div>
+							</>)
+						}
+						
 					</div>
 				</div>
 

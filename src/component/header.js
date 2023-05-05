@@ -44,9 +44,9 @@ export const Header=()=> {
 								}}>
 									{
 										menu.map((item,i)=>
-										<MenuItem  key={i} >
-											<ListItemText  onClick={handleClose} >
-												<a href={`#${item.id}`}>{item.menu}</a> 
+										<MenuItem key={i}>
+											<ListItemText key={i}  onClick={handleClose} >
+												<a key={i} href={`#${item.id}`}>{item.menu}</a> 
 											</ListItemText>
 										</MenuItem>)
 									} 

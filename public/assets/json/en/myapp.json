@@ -11,9 +11,15 @@
 		}
 		
 	],
-	"menu":[
+	"mainMenu":[
 		{
-
+			"call":"Hi, I'm",
+			"name":"Shahmirze Mammadyarli",
+			"work":"I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client's requirements is our moto.",
+			"experience":"Experiance",
+			"years":"Years of ",
+			"aboutMe":"About Me",
+			"know":"Know Me More"
 		}
 	],
 	"headerMenu":[
@@ -68,6 +74,13 @@
 			"inf":"Baku,Azerbijan"
 		}
 	],
+	"projectData":[
+				{
+					"target":"What I do?",
+					"text":"How I can help your next project"
+
+				}
+			],
 	"project":[
 		{
 			"work":"Graphic Design",
@@ -94,6 +107,12 @@
 			"text":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text."
 		}	
 	],
+	"portfolio":[
+		{
+			"target":"Portfolio",
+			"text":"Some of my most recent projects"
+		}
+	],
 	"menu":["All","Details","Mockups","YouTube Videos","Vime Videos"],
 	"image":[
 		{ "src":"project-1.jpg", "cat":[1] },
@@ -102,6 +121,18 @@
 		{ "src":"project-4.jpg", "cat":[3,4] },
 		{ "src":"project-5.jpg", "cat":[2] },
 		{ "src":"project-6.jpg", "cat":[1] }
+	],
+	"laptop":[
+		{
+			"target":"Interested in working with me?",
+			"hire":"Hire Me"
+		}
+	],
+	"question":[
+		{
+			"target":"FAQ",
+			"text":"Have any questions?"
+		}
 	],
 	"questionMenu":[
 		{
@@ -125,7 +156,12 @@
 			"text":"Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet."
 		}
 	 ],
-
+	 "sliderTarget":[
+		{
+			"target":"Client Speak",
+			"text":"What Some of my Clients Say"
+		}
+	],
 	"slide":[
 			{
 				"text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut diam at quam bibendum bibendum. Donec euismod, velit vel lacinia bibendum, sapien nunc faucibus sapien, vel tincidunt nulla velit vel nisi. Sed euismod, nibh eget aliquam lacinia, ipsum lorem malesuada magna, ac malesuada odio nisl at ante. Sed auctor enim sed enim ultrices, vel suscipit sapien luctus. Donec euismod mauris ac velit bibendum, quis vestibulum urna iaculis. ",
@@ -145,6 +181,16 @@
 				"fullName":"Heath Ledger",
 				"workPlace":"Freelancer from Heaven"
 			}
+	],
+	"resume":[
+		{
+			"target":"Resume",
+			"text":"A summary of My Resume",
+			"experience":"My Experiance",
+			"education":"My Education",
+			"skill":"My Skills",
+			"download":"Download"
+		}
 	],
 	"education":[
 		{
@@ -210,5 +256,25 @@
 			"percent":"99"
 		}
 
+	],
+	"contact1":[
+		{
+			"title":"Let's get in touch",
+			"text":"I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.",
+			"locationName":"Living in",
+			"location":"Baku, 20 Yanvar Moskva Avenue 52",
+			"contact":"Whatsapp",
+			"call":"(+994) 55 698 45 46"
+		}
+	],
+	
+	"contact2":[
+		{
+			"title":"Let's get in touch",
+			"name":"What is Your Name?",
+			"email":"Your Email Address?",
+			"help":"How can I Help you?",
+			"send":"send"
+		}
 	]
 }
