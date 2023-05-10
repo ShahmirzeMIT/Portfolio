@@ -3,7 +3,6 @@ import styles from "../index.css"
 import { useState } from "react"
 import { DataContext } from "../App"
 
-
 function Portfolio() {
 	const [filter, setFilter] = useState(0)
 	const value=useContext(DataContext)
