@@ -11,7 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 20px; /* Add some padding to make room for a custom icon */
+  background: url("") no-repeat right center; /* Replace with your own custom icon */
+  background-size: 16px 16px; /* Adjust the size of the custom icon */
+}
+.langSlct{
+  padding: 3px 5px;
+  border-radius: 50%;
+  outline: none;
+  border-color:black;
+}
 * {
 	margin: 0;
 	padding: 0;

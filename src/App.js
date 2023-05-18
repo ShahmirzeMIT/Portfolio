@@ -12,6 +12,7 @@
   import { useState } from "react";
 import { createContext } from "react";
 import Check from "./component/check";
+import axios from "axios";
 
 export const LanguageContext=createContext()
 export const DataContext=createContext()
@@ -42,11 +43,11 @@ export const DataContext=createContext()
         "contact2":[]
       }
     );
-    useEffect(()=>{
-          fetch(`./assets/json/${lang}/myapp.json`)
-          .then(resp => resp.json())
-          .then(txt => setSent(txt))
-        },[lang])
+    useEffect(() => {
+      fetch(`./assets/json/${lang}/myapp.json`)
+        .then(resp => resp.json())
+        .then(txt => setSent(txt))
+    }, [lang]);
       
         const LanguageChange = (language) => {
           setLang(language);
