@@ -387,6 +387,7 @@ select {
 .head{
 	font-weight: 500;
 	font-size: 1.3em;
+  padding:0;
 	color: #272626;
 }
 .eductaion , .experience{
@@ -420,6 +421,11 @@ select {
 .d-flex{
 	display: flex;
 	justify-content: space-between;
+}
+.d-flex2{
+	display: flex;
+	justify-content:center;
+  flex-wrap: wrap;
 }
 .yellowLine{
 	height: 6px;
@@ -918,18 +924,11 @@ color: white;
       .pictures{
         justify-content: space-between;
       }
-      .design{
-		
-        justify-content: space-between;
-        
-      }
       .pictures{
         justify-content: space-between;
       }
       .design{
-		
         justify-content: space-between;
-        
       }
     
       
@@ -943,6 +942,9 @@ color: white;
   }
 
  @media only screen and (min-width: 1120px) {
+  .d-flex2{
+    justify-content: space-between;
+  }
 	.openword {
 	    width: auto;
 	    text-align: inherit;

@@ -1,27 +1,2 @@
-
-
-                <div className="typewriter">
-                  <Typewriter
-                    onInit={(typewriter) => {
-                      typewriter
-                        .typeString(`${item.typewriter1}`)
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString(`${item.typewriter2}`)
-                        .pauseFor(1000)
-                        .deleteAll()
-                        .typeString(`${item.typewriter3}`)
-                        .start();
-                    }}
-                  />
-                </div>
-                <p>{item.location}</p>
-                <div className="contact">
-                  <a href="#works">{item.works}</a>
-                  <a href="#contact">
-                    {item.contact}
-                    <span>
-                      <BsArrowDownCircle />
-                    </span>
-                  </a>
-                </div>
+education.filter((item)=>item.name.includes("resume") && item.id==90)
+      .map((item)=> <div className="resume">{item[lang]}</div>)

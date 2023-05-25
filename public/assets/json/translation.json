@@ -15,10 +15,10 @@
     },
     {
         "id": "3",
-        "name": "eduDescription",
-        "az": "Men Oxudugum Unini Cox sevirem?",
-        "en": "i like what i read?",
-        "ru": "мне нравится то, что я читаю?"
+        "name": "eduStudyYear",
+        "az": "2020\/2024",
+        "en": "2020\/2024",
+        "ru": "2020\/2024"
     },
     {
         "id": "4",
@@ -155,24 +155,24 @@
     },
     {
         "id": "23",
-        "name": "eduCourse",
-        "az": "Full Stack Developer(HTML and CSS ,JAVASCIRPTand React , PHP and Laravel)",
-        "en": "Full Stack Developer(HTML and CSS ,JAVASCIRPTand React , PHP and Laravel)",
-        "ru": "Full Stack Developer(HTML and CSS ,JAVASCIRPTand React , PHP and Laravel)"
-    },
-    {
-        "id": "24",
         "name": "eduCompany",
         "az": "Sənaye və İnnovasiyalar üzrə Bakı Dövlət Peşə Təhsil Mərkəzi",
         "en": "Baku State Vocational Education Center for Industry and Innovation",
         "ru": "Бакинский Государственный Центр Профессионального Образования Промышленности и Инноваций"
     },
     {
+        "id": "24",
+        "name": "eduCourse",
+        "az": " Full Stack Developer(HTML and CSS ,JAVASCIRPTand React , PHP and Laravel)",
+        "en": " Full Stack Developer(HTML and CSS ,JAVASCIRPTand React , PHP and Laravel)",
+        "ru": "Full Stack Developer (HTML и CSS, JAVASCIPT и React, PHP и Laravel)"
+    },
+    {
         "id": "25",
-        "name": "eduOrganizator",
-        "az": "Azərbaycan Respublikası Elm və Təhsil Nazirliyi",
-        "en": "Ministry of Education Republic of Azerbaijan",
-        "ru": "Министерство Науки и Образования Азербайджанской Республики"
+        "name": "eduCourseYear",
+        "az": "01.06.2021\/15.02.2022",
+        "en": "01.06.2021\/15.02.2022",
+        "ru": "01.06.2021\/15.02.2022"
     },
     {
         "id": "27",
@@ -575,17 +575,17 @@
     },
     {
         "id": "84",
-        "name": "eduPosition1",
-        "az": "Full-Stack Developer",
-        "en": "Full-Stack Developer",
-        "ru": "Full-Stack разработчик"
+        "name": "eduCompanyName",
+        "az": " Sahil-İT",
+        "en": " Sahil-İT",
+        "ru": "Сахил-ИТ"
     },
     {
         "id": "85",
-        "name": "eduCompanyName1",
-        "az": "Sahil-İT",
-        "en": "Sahil-İT",
-        "ru": "Сахил-ИТ"
+        "name": "eduPosition",
+        "az": "Full-Stack Developer",
+        "en": "Full-Stack Developer",
+        "ru": "Полный стек разработчик"
     },
     {
         "id": "86",
@@ -607,5 +607,61 @@
         "az": "Məni Daha çox tanıyın",
         "en": "Know Me More\r\n",
         "ru": "Знай меня больше"
+    },
+    {
+        "id": "89",
+        "name": "projectFirst",
+        "az": "Mən nə edirəm?",
+        "en": "What I Do?",
+        "ru": "Что мне делать?"
+    },
+    {
+        "id": "90",
+        "name": "resume",
+        "az": "CV",
+        "en": "Resume",
+        "ru": "Резюме"
+    },
+    {
+        "id": "91",
+        "name": "eduJed",
+        "az": "JedAcademy\r\n                        ",
+        "en": "JedAcademy\r\n                        ",
+        "ru": "Джед Академия"
+    },
+    {
+        "id": "92",
+        "name": "eduJedCourse",
+        "az": "HTML5, CSS3, SASS, SCSS, Bootstrap, Tailwind CSS, Git \/ Github, JavaScript, TypeScript, Ajax \/ Axios, React.js, Redux, REST API, Material UI",
+        "en": "HTML5, CSS3, SASS, SCSS, Bootstrap, Tailwind CSS, Git \/ Github, JavaScript, TypeScript, Ajax \/ Axios, React.js, Redux, REST API, Material UI",
+        "ru": "HTML5, CSS3, SASS, SCSS, Bootstrap, Tailwind CSS, Git \/ Github, JavaScript, TypeScript, Ajax \/ Axios, React.js, Redux, REST API, Material UI"
+    },
+    {
+        "id": "93",
+        "name": "eduJedYear",
+        "az": "15.09.2022\/02.02.2023",
+        "en": "15.09.2022\/02.02.2023",
+        "ru": "15.09.2022\/02.02.2023"
+    },
+    {
+        "id": "94",
+        "name": "eduEnglish",
+        "az": "Sənan Hüseynzadə School",
+        "en": "Sənan Hüseynzadə School",
+        "ru": "Сенан Хусейнзаде Cкул"
+    },
+    {
+        "id": "95",
+        "name": "eduEnglishGeneral",
+        "az": "Ümumi ingilis dili",
+        "en": "General English",
+        "ru": "Общий английский"
+    },
+    {
+        "id": "96",
+        "name": "eduEnglishYear",
+        "az": "19.11.2022\/Davam Edir",
+        "en": "19.11.2022\/Present",
+        "ru": "19.11.2022\/Продолжение"
     }
 ] }

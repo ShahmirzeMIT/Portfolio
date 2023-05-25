@@ -3,7 +3,7 @@ import styles from "../index.css";
 import { BsFillPaletteFill, BsDisplay } from "react-icons/bs";
 import { FaPencilRuler, FaChartArea, FaBullhorn } from "react-icons/fa";
 import { HiPaintBrush } from "react-icons/hi2";
-import { DataContext } from "../App";
+import { DataContext, LanguageContext } from "../App";
 import { Fragment } from "react";
 
 const logo = [
@@ -17,31 +17,46 @@ const logo = [
 
 function Projects() {
   const value = useContext(DataContext);
-  const project = value.project;
-  const projectData = value.projectData;
+  const project = value.data
+  const [lang, setLang] = useContext(LanguageContext);
 
   return (
     <section className="bgGray" id="experience">
-      <div className="wd80 mrp5">
-        <div className="whatBtn mr5 mrp5 wd80">
-          {projectData.map((item, index) => (
-            <Fragment key={index}>
-              <p className="">{item.target}</p>
-              <h1>{item.text}</h1>
-            </Fragment>
-          ))}
+      <div className="whatBtn mr5 mrp5 wd80">
+      {
+        project && project.length>0 ? 
+        <div className="wd80 mrp5">{
+           project.filter((item)=>  item.name=="projectFirst")
+           .map((item)=><p>{item[lang]}</p>)
+
+        } {
+          project.filter((item)=>  item.name=="projectTitle")
+          .map((item)=> <h1>{item[lang]}</h1>)
+        }
+        
         </div>
-        <div className="course">
+        :""
+
+      }
+      {
+         project && project.length>0 ? 
+          <div className="course">
           <div className="design">
-            {project.map((item, index) => (
-              <div className="txtCenter" key={index}>
-                <div>{logo[index].logo}</div>
-                <h2>{item.work}</h2>
-                <p className="text">{item.text}</p>
-              </div>
-            ))}
+            {
+                project.filter((item)=>item.name=="projectDesign" ||item.name=="projectWebDesign" 
+                ||item.name=="projectUxDesign" ||item.name=="projectAppDev" 
+                ||item.name=="projectBusAnalysis" ||item.name=="projectSeoMark" )
+                .map((item,i)=>
+                 <div className="txtCenter">
+                 <div>{logo[i].logo}</div>
+                  <h2>{item[lang]}</h2>
+                  </div>
+                )
+            }
           </div>
         </div>
+        :""
+      }
       </div>
     </section>
   );

@@ -39,9 +39,9 @@ export const DataContext=createContext()
           <DataContext.Provider value={sent}>
               <Header/>
               <Main/>
-              {/* <Projects/>
-              <Resume/>
-              <Portfolio/>
+              <Projects/>
+               <Resume/>
+             {/* <Portfolio/>
               <Laptop/>
               <Questions/>
               <Slider/>
