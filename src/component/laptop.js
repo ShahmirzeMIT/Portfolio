@@ -11,10 +11,10 @@ function Laptop() {
   const [data, setData] = useState([]);
 
   useEffect(() => {	
-	   fetch('http://localhost/portfolio/getTranslation.php')
-	  .then(response=>{response.json()})
+	   fetch('./assets/json/translation.json')
+	  .then(response=>response.json())
 	  .then((data)=>{
-		console.log(data)
+		console.log(data.data)
 	  })
   }, []);
 
@@ -22,7 +22,7 @@ function Laptop() {
     <>
       <section className="psR">
         <div className="lapimg">
-          <img src={"/assets/img/laptop.jpg"} />
+          <img src={"./assets/img/laptop.jpg"} />
         </div>
         <div className="shadow"></div>
         <div className="word">

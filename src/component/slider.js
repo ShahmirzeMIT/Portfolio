@@ -26,7 +26,7 @@ function Slider() {
             <Carousel.Item key={i}>
               <p className="wd50P">{item.text}</p>
               <div className="littleImg">
-                <img src={"/assets/img/" + item.src} />
+                <img src={"assets/img/" + item.src} />
               </div>
               <p>{item.fullName}</p>
               <p>{item.workPlace}</p>

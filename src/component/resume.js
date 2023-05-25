@@ -114,7 +114,7 @@ function Resume() {
             {resume.map((item, index) => (
               <Fragment key={index}>
                 <div className="download">
-                  <a href="./assets/cv/cv.pdf" download>
+                  <a href="assets/cv/cv.pdf" download>
                     {item.download}
                   </a>
                 </div>

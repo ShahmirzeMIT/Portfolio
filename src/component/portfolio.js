@@ -40,7 +40,7 @@ function Portfolio() {
             <div className={`pictures ${filter !== 0 ? "jsCenter" : ""}`}>
               {filterByCat().map((pic, i) => (
                 <div key={i} className={`wd300 ${filter !== 0 ? " pd15" : ""}`}>
-                  <img src={`./assets/img/${pic.src}`} />
+                  <img src={`assets/img/${pic.src}`} />
                 </div>
               ))}
             </div>

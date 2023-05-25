@@ -19,36 +19,18 @@ export const DataContext=createContext()
 
   export const App=()=> {
     const [lang, setLang] = useState("en");
-    const  [sent, setSent] = useState(
-      { "header":[],
-        "mainMenu":[],
-        "headerMenu":[],
-        "information":[],
-        "projectData":[],
-        "project":[],
-        "portfolio":[],
-        "menu":[],
-        "image":[],
-        "laptop":[],
-        "question":[],
-        "questionMenu":[],
-        "sliderTarget":[],
-        "slide":[],
-        "resume":[],
-        "education":[],
-        "experience":[],
-        "skill1":[],
-        "skill2":[],
-        "contact1":[],
-        "contact2":[]
-      }
-    );
+    const  [sent, setSent] = useState({
+      id:"",
+      name:"",
+      az:"",
+      en:"",
+      ru:""
+    });
     useEffect(() => {
-      fetch(`./assets/json/${lang}/myapp.json`)
+      fetch(`./assets/json/translation.json`)
         .then(resp => resp.json())
         .then(txt => setSent(txt))
-    }, [lang]);
-      
+    }, []);
         const LanguageChange = (language) => {
           setLang(language);
         };
@@ -56,7 +38,7 @@ export const DataContext=createContext()
         <LanguageContext.Provider value={[lang,LanguageChange]}>
           <DataContext.Provider value={sent}>
               <Header/>
-              <Main/>
+              {/* <Main/>
               <Projects/>
               <Resume/>
               <Portfolio/>
@@ -64,7 +46,7 @@ export const DataContext=createContext()
               <Questions/>
               <Slider/>
               <Contact/>
-              <Footer/>
+              <Footer/> */}
             </DataContext.Provider>
             </LanguageContext.Provider>
         );

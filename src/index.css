@@ -11,6 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ul{
+  padding-left: 0 !important;
+}
+.openMenuUl{
+  text-align: center;
+  margin-top: 4em;
+  padding: 5px;
+  font-family: arial;
+  font-size: 1.1em;
+}
+.linkPd{
+  padding: 0 10px;
+}
 select {
   -webkit-appearance: none;
   -moz-appearance: none;

@@ -34,7 +34,7 @@ function Questions() {
               </div>
             </div>
             <div className="light wdim100">
-              <img src={"/assets/img/faq.png"} />
+              <img src={"assets/img/faq.png"} />
             </div>
           </div>
         </div>
