@@ -593,5 +593,19 @@
         "az": "15.04.2023\/Hazırda",
         "en": "15.04.2023\/Present",
         "ru": "15.04.2023\/Настоящее время"
+    },
+    {
+        "id": "87",
+        "name": "mainMe",
+        "az": "Mənim haqqımda",
+        "en": "About Me",
+        "ru": "Обо мне"
+    },
+    {
+        "id": "88",
+        "name": "mainKnow",
+        "az": "Məni Daha çox tanıyın",
+        "en": "Know Me More\r\n",
+        "ru": "Знай меня больше"
     }
 ] }

@@ -38,8 +38,8 @@ export const DataContext=createContext()
         <LanguageContext.Provider value={[lang,LanguageChange]}>
           <DataContext.Provider value={sent}>
               <Header/>
-              {/* <Main/>
-              <Projects/>
+              <Main/>
+              {/* <Projects/>
               <Resume/>
               <Portfolio/>
               <Laptop/>

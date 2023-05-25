@@ -857,6 +857,10 @@ color: white;
     color: white;
   }
   
+  .wd-90{
+    width: 100%;
+    margin: 0 auto;
+  }
    
 
   
@@ -895,6 +899,9 @@ color: white;
 		width: 80%;
 		margin: 0 auto;
 	 }
+   .wd-90{
+    width: 90%;
+   }
  }
 
 
@@ -987,7 +994,7 @@ color: white;
 		width: 400px;
 	}
 	.wd-600{
-		width: 600px;
+		width: 300px;
 	}
 	.Know article:first-child p{
 		text-align:left;

@@ -38,11 +38,6 @@ export const Header = () => {
 
   const [lang, setLang] = useContext(LanguageContext);
 
-  // new Typewriter('#typewriter', {
-  //   strings: ['Hello', 'World'],
-  //   autoStart: true,
-  // });
-
   return (
 
     <>

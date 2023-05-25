@@ -1,115 +1,77 @@
-// import { useContext } from "react";
-// import styles from "../index.css";
-// import { DataContext } from "../App";
-// import { Fragment } from "react";
-// function Main() {
-// const value=useContext(DataContext)
-// const information=value.information
-// const mainMenu=value.mainMenu
-// 	return(
-
-// 		<>
-// 		<main id="know">
-// 		<div className="wd-80">
-// 			{
-// 				mainMenu.map((item,index)=>
-// 				<>
-//           <Fragment key={index}>
-// 				<div className="aboutme ">
-// 				<p>{item.aboutMe}</p>
-// 		</div>
-// 			<h1>{item.know}</h1>
-// 			<div className="Know">
-// 				<article>
-// 					<h2>{item.call} <span>{item.name}</span></h2>
-// 					<p className="pt2">
-// 						{item.work}
-// 					</p>
-// 				</article>
-// 				<article>
-// 						<div>2<p className="bgYellow"></p></div>
-// 						<h2>{item.years} <span style={{fontWeight:700}}>{item.experience}</span> </h2>
-// 				</article>
-// 			</div>
-//       </Fragment>
-// 			</>)
-// 			}
-			
-// 			<div className="Elaqe">
-// 				<div className="nameEm wd-600 mr-auto" >
-// 					{
-// 						information.map((item,i)=> i===0 ||i===1 ?  <div className="mr-auto600" key={i}><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
-// 					}
-// 				</div>
-// 				<div className="nameEm wd-400 mr-auto" >
-// 					{
-// 						information.map((item,i)=> i===2 ||i===3 ?  <div className="mr-auto600" key={i}><p>{item.target}</p> <p className="bold">{item.inf}</p>  </div>:"")
-// 					}
-// 				</div>
-// 			</div>
-// 		 </div>
-// 		</main>
-// 		</>
-// 	)
-// }
-
-// export default Main
+import { DataContext, LanguageContext } from "../App";
 import { useContext } from "react";
 import styles from "../index.css";
-import { DataContext } from "../App";
 import { Fragment } from "react";
 
 function Main() {
   const value = useContext(DataContext);
-  const information = value.information;
-  const mainMenu = value.mainMenu;
-
+  const information = value.data
+  const [lang, setLang] = useContext(LanguageContext);
   return (
     <>
-      <main id="know">
-        <div className="wd-80">
-          {mainMenu.map((item, index) => (
-            <Fragment key={index}>
-              <div className="aboutme">
-                <p>{item.aboutMe}</p>
+    <main id="know">
+
+      {
+        information && information.length>0?
+          <>
+          <div className="wd-90">
+            <div className="aboutme">
+                <p>{information.filter((item)=>item.name.includes("mainMe"))
+                .map((item)=>item[lang])
+                }</p>
               </div>
-              <h1>{item.know}</h1>
+              <h1>{information.filter((item)=>item.name.includes("mainKnow"))
+                .map((item)=>item[lang])}</h1>
               <div className="Know">
                 <article>
-                  <h2>
-                    {item.call} <span>{item.name}</span>
+                  <h2>{information.filter((item)=>item.name.includes("mainCall"))
+                .map((item)=>item[lang])}
+                   <span> {information.filter((item)=>item.name.includes("mainName"))
+                .map((item)=>item[lang])}</span>
+                 
                   </h2>
-                  <p className="pt2">{item.work}</p>
+                  <p className="pt2">{information.filter((item)=>item.name.includes("mainWork"))
+                .map((item)=>item[lang])}</p>
                 </article>
                 <article>
                   <div>2<p className="bgYellow"></p></div>
-      						<h2>{item.years} <span style={{fontWeight:700}}>{item.experience}</span> </h2>
+      						<h2> <span style={{fontWeight:700}}> {information.filter((item)=>item.name.includes("mainYears"))
+                .map((item)=>item[lang])} {information.filter((item)=>item.name.includes("mainExperience"))
+                .map((item)=>item[lang])}</span> </h2>
                 </article>
               </div>
-            </Fragment>
-          ))}
-          <div className="Elaqe">
-            <div className="nameEm wd-600 mr-auto">
-              {information.map((item, i) =>
-                i === 0 || i === 1 ? (
-                  <div className="mr-auto600" key={i}>
-                    <p>{item.target}</p> <p className="bold">{item.inf}</p>
-                  </div>
-                ) : null
-              )}
-            </div>
-            <div className="nameEm wd-400 mr-auto">
-              {information.map((item, i) =>
-                i === 2 || i === 3 ? (
-                  <div className="mr-auto600" key={i}>
-                    <p>{item.target}</p> <p className="bold">{item.inf}</p>
-                  </div>
-                ) : null
-              )}
-            </div>
-          </div>
-        </div>
-      </main>
+
+              <div className="Elaqe">
+               
+                        {
+                          information.filter((item)=>item.name=="mainBottomName"
+                           || item.name=="mainBottomEmail" ||
+                            item.name=="mainBottomDate" || item.name=="mainBottomFrom")
+                           .map((item)=> <div className="nameEm wd-600 mr-auto">
+                           <div className="mr-auto600" ><p>{item[lang] }</p> </div>
+                               </div> )
+                        }
+                        {
+                          information.filter((item)=>item.name=="mainName"
+                           || item.name=="mainEmailText" ||
+                            item.name=="mainDateText" || item.name=="mainFromText")
+                           .map((item)=> <div className="nameEm wd-600 mr-auto">
+                           <div className="mr-auto600" ><p className="bold"> {item[lang] }</p> </div>
+                               </div> )
+                        }
+                     
+                <div className="nameEm wd-400 mr-auto">
+                      <div className="mr-auto600" >
+                        <p>{}</p> <p className="bold">{}</p>
+                      </div>
+                </div>
+              </div>
+              </div>
+          
+          </>
+        :""
+      }
+      </main> 
     </>
   );
 }
