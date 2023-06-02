@@ -24,39 +24,45 @@ function Projects() {
     <section className="bgGray" id="experience">
       <div className="whatBtn mr5 mrp5 wd80">
       {
-        project && project.length>0 ? 
-        <div className="wd80 mrp5">{
-           project.filter((item)=>  item.name=="projectFirst")
-           .map((item)=><p>{item[lang]}</p>)
-
-        } {
-          project.filter((item)=>  item.name=="projectTitle")
-          .map((item)=> <h1>{item[lang]}</h1>)
-        }
-        
-        </div>
-        :""
-
-      }
-      {
-         project && project.length>0 ? 
-          <div className="course">
-          <div className="design">
-            {
-                project.filter((item)=>item.name=="projectDesign" ||item.name=="projectWebDesign" 
-                ||item.name=="projectUxDesign" ||item.name=="projectAppDev" 
-                ||item.name=="projectBusAnalysis" ||item.name=="projectSeoMark" )
-                .map((item,i)=>
-                 <div className="txtCenter">
-                 <div>{logo[i].logo}</div>
-                  <h2>{item[lang]}</h2>
-                  </div>
-                )
-            }
-          </div>
-        </div>
-        :""
-      }
+  project && project.length > 0 ? (
+    <div className="wd80 mrp5">
+      {project
+        .filter((item) => item.name === "projectFirst")
+        .map((item, index) => (
+          <p key={index}>{item[lang]}</p>
+        ))}
+      {project
+        .filter((item) => item.name === "projectTitle")
+        .map((item, index) => (
+          <h1 key={index}>{item[lang]}</h1>
+        ))}
+    </div>
+  ) : null
+}
+{
+  project && project.length > 0 ? (
+    <div className="course">
+      <div className="design">
+        {project
+          .filter(
+            (item) =>
+              item.name === "projectDesign" ||
+              item.name === "projectWebDesign" ||
+              item.name === "projectUxDesign" ||
+              item.name === "projectAppDev" ||
+              item.name === "projectBusAnalysis" ||
+              item.name === "projectSeoMark"
+          )
+          .map((item, index) => (
+            <div className="txtCenter" key={index}>
+              <div>{logo[index].logo}</div>
+              <h2>{item[lang]}</h2>
+            </div>
+          ))}
+      </div>
+    </div>
+  ) : null
+}
       </div>
     </section>
   );

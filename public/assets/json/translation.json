@@ -663,5 +663,19 @@
         "az": "19.11.2022\/Davam Edir",
         "en": "19.11.2022\/Present",
         "ru": "19.11.2022\/Продолжение"
+    },
+    {
+        "id": "97",
+        "name": "resuDownload",
+        "az": "Cv yükləyin",
+        "en": "Download Cv",
+        "ru": "Скачать Cv"
+    },
+    {
+        "id": "98",
+        "name": "portfolioTarget",
+        "az": "Portfolio",
+        "en": "Portfolio",
+        "ru": "Портфолио"
     }
 ] }

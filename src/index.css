@@ -356,7 +356,9 @@ select {
     padding-top: 5em;
     
   }
-
+.wd85{
+  width: 85%;
+}
   
  .wd80{
 	width: 80%;
@@ -364,6 +366,15 @@ select {
 }
 .pt5{
 	padding-top: 5em;
+}
+.wd100{
+width: 100%;
+}
+.wd50{
+  width: 50%;
+}
+.wd90{
+  width: 90%;
 }
 
 .resume{
@@ -481,6 +492,7 @@ select {
     padding: 15px 25px;
     border: 2px solid black;
     transition: all 1s;
+    text-align: center;
     color: black;
 }
 .pd0{

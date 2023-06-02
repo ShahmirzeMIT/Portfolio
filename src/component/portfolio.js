@@ -1,51 +1,77 @@
 import { useContext } from "react";
 import styles from "../index.css";
 import { useState } from "react";
-import { DataContext } from "../App";
+import { DataContext, LanguageContext } from "../App";
 import { Fragment } from "react";
 
 function Portfolio() {
   const [filter, setFilter] = useState(0);
   const value = useContext(DataContext);
   const menu = value.menu;
-  const image = value.image;
-  const portfolio = value.portfolio;
+  const [image,setImage]=useState([])
+  const portfolio = value.data;
+
+  useState(()=>{
+    fetch('./assets/json/pImage.json')
+    .then((data)=>data.json())
+    .then((data)=>setImage(data.data))
+  },[])
+  
+  const [lang, setLang] = useContext(LanguageContext);
 
   function filterByCat() {
-    return filter === 0 ? image : image.filter((item) => item.cat.includes(filter));
+    return filter === 0 ? image : image.filter((item) => item.src.includes(filter));
   }
 
   return (
     <>
       <section id="project">
-        <div className="bgBeige">
+        {
+          portfolio && portfolio.length>0 && image.length>0 ?
+          <>
+          <div className="bgBeige">
           <div className="contentP">
-            {portfolio.map((item, index) => (
-              <Fragment key={index}>
-                <div className="centr">
-                  <div className="Portfolio">{item.target}</div>
+
+          {
+            portfolio.filter((item)=>item.name=="portfolioTarget")
+            .map((item ,i)=> 
+              <div className="centr" key={i}>
+                  <div className="Portfolio">{item[lang]}</div>
                 </div>
-                <h1>{item.text}</h1>
-              </Fragment>
-            ))}
-            <div className="pickOut">
+              )
+          }
+          {
+            portfolio.filter((item)=>item.name=="portfolioTitle")
+            .map((item ,i)=> <h1 key={i}>{item[lang]}</h1>
+              )
+          }
+           <div className="pickOut">
               <ul>
-                {menu.map((item, i) => (
+                {
+                  portfolio.filter((item)=>item.id==53 || item.id==54 || item.id==55 ||item.id==56 || item.id==57 )
+                  .map((item,i)=>
                   <li key={i} onClick={() => setFilter(i)}>
-                    {item}
+                    {item[lang]}
                   </li>
-                ))}
+                  )
+                }
               </ul>
-            </div>
-            <div className={`pictures ${filter !== 0 ? "jsCenter" : ""}`}>
-              {filterByCat().map((pic, i) => (
-                <div key={i} className={`wd300 ${filter !== 0 ? " pd15" : ""}`}>
-                  <img src={`assets/img/${pic.src}`} />
-                </div>
-              ))}
+           </div>
+           <div className={`pictures ${filter !== 0 ? "jsCenter" : ""}`}>
+            {
+              filterByCat().map((pic,i)=>
+                  <div key={i} className={`wd300 ${filter !== 0 ? " pd15" : ""}`}>
+                        <img src={`assets/img/${pic.src}`} />
+                  </div>
+              )
+            }
             </div>
           </div>
-        </div>
+          </div>
+          </>
+          :""
+          
+        }
       </section>
     </>
   );
