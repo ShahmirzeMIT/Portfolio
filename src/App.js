@@ -11,21 +11,13 @@
   import {  useEffect } from "react";
   import { useState } from "react";
 import { createContext } from "react";
-import Check from "./component/check";
-import axios from "axios";
 
 export const LanguageContext=createContext()
 export const DataContext=createContext()
 
   export const App=()=> {
     const [lang, setLang] = useState("en");
-    const  [sent, setSent] = useState({
-      id:"",
-      name:"",
-      az:"",
-      en:"",
-      ru:""
-    });
+    const  [sent, setSent] = useState([]);
     useEffect(() => {
       fetch(`./assets/json/translation.json`)
         .then(resp => resp.json())
@@ -42,9 +34,9 @@ export const DataContext=createContext()
               <Projects/>
                <Resume/>
               <Portfolio/>
-             <Laptop/>
-              {/* <Questions/>
-              <Slider/>
+              <Laptop/>
+              <Questions/>
+             {/* <Slider/>
               <Contact/>
               <Footer/> */}
             </DataContext.Provider>

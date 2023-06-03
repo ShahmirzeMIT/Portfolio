@@ -26,12 +26,12 @@ function Laptop() {
               <div >
                 <h1 className="white">
                   {laptop.filter((item)=>item.name=="hireTitile")
-                .map((item)=><>{item[lang]}?</>)
+                .map((item,i)=><div key={i}>{item[lang]}?</div>)
                 }</h1>
-                <div className="btn1">
+                <div className="btn1" >
                   <button>{laptop.filter((item)=>item.name=="hireButton")
-                .map((item)=><>{item[lang]}</>)
-                }!</button>
+                .map((item,i)=>< div key={i}>{item[lang]}!</div>)
+                }</button>
                 </div>
               </div>
            
