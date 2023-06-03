@@ -42,8 +42,8 @@ export const DataContext=createContext()
               <Projects/>
                <Resume/>
               <Portfolio/>
-            {/*  <Laptop/>
-              <Questions/>
+             <Laptop/>
+              {/* <Questions/>
               <Slider/>
               <Contact/>
               <Footer/> */}

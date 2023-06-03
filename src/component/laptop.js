@@ -1,22 +1,15 @@
 import { useContext, useEffect } from "react";
 import styles from "../index.css";
-import { DataContext } from "../App";
+import { DataContext, LanguageContext } from "../App";
 import axios from "axios";
 import { Fragment } from "react";
 import { useState } from "react";
 
 function Laptop() {
   const value = useContext(DataContext);
-  const laptop = value.laptop;
-  const [data, setData] = useState([]);
+  const laptop = value.data;
 
-  useEffect(() => {	
-	   fetch('./assets/json/translation.json')
-	  .then(response=>response.json())
-	  .then((data)=>{
-		console.log(data.data)
-	  })
-  }, []);
+  const [lang, setLang] = useContext(LanguageContext);
 
   return (
     <>
@@ -25,16 +18,25 @@ function Laptop() {
           <img src={"./assets/img/laptop.jpg"} />
         </div>
         <div className="shadow"></div>
-        <div className="word">
-          {laptop.map((item, index) => (
-            <Fragment key={index}>
-              <h1 className="white">{item.target}</h1>
-              <div className="btn1">
-                <button>{item.hire}!</button>
+
+          {
+          laptop && laptop.length>0 ?
+           <div className="word">
+            
+              <div >
+                <h1 className="white">
+                  {laptop.filter((item)=>item.name=="hireTitile")
+                .map((item)=><>{item[lang]}?</>)
+                }</h1>
+                <div className="btn1">
+                  <button>{laptop.filter((item)=>item.name=="hireButton")
+                .map((item)=><>{item[lang]}</>)
+                }!</button>
+                </div>
               </div>
-            </Fragment>
-          ))}
-        </div>
+           
+          </div> 
+          :""}
       </section>
     </>
   );
