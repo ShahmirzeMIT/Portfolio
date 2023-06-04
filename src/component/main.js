@@ -46,7 +46,9 @@ function Main() {
         <article>
           <div>
             <p className="bgYellow"></p>
+            2
           </div>
+
           <h2>
             <span style={{ fontWeight: 700 }}>
               {information

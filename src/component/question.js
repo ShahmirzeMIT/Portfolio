@@ -71,21 +71,15 @@ function Questions() {
                              </Accordion> 
                             :""
                              )
-                          
                           )
                           }
                         </div>
                       </div>
-                      
                     }
                 </>
               :""
               }
-              
               </>
-             
-                
-             
             </div>
             
              <div className="light wdim100">

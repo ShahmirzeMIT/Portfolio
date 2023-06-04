@@ -17,7 +17,13 @@ export const DataContext=createContext()
 
   export const App=()=> {
     const [lang, setLang] = useState("en");
-    const  [sent, setSent] = useState([]);
+    const  [sent, setSent] = useState({
+      id:"",
+      name:"",
+      az:"",
+      en:"",
+      ru:""
+    });
     useEffect(() => {
       fetch(`./assets/json/translation.json`)
         .then(resp => resp.json())
@@ -34,10 +40,10 @@ export const DataContext=createContext()
               <Projects/>
                <Resume/>
               <Portfolio/>
-              <Laptop/>
-              <Questions/>
-             {/* <Slider/>
-              <Contact/>
+             <Laptop/>
+             <Questions/>
+              <Slider/>
+             {/*<Contact/>
               <Footer/> */}
             </DataContext.Provider>
             </LanguageContext.Provider>

@@ -29,7 +29,6 @@ select {
   -moz-appearance: none;
   appearance: none;
   padding-right: 20px; /* Add some padding to make room for a custom icon */
-  background: url("") no-repeat right center; /* Replace with your own custom icon */
   background-size: 16px 16px; /* Adjust the size of the custom icon */
 }
 .langSlct{
@@ -37,6 +36,7 @@ select {
   border-radius: 50%;
   outline: none;
   border-color:black;
+  background: none;
 }
 * {
 	margin: 0;
@@ -738,7 +738,7 @@ position: relative;
 
 }
 .client div{
-	width: 100px;
+	width: 150px;
 	padding: 2px ;
 	background-color: #f5df4e;
 	margin: 1em auto;

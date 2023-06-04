@@ -32,7 +32,7 @@
         "name": "headType1",
         "az": "Full-Stack",
         "en": "Full-Stack",
-        "ru": "Полный стек"
+        "ru": "Full-Stack"
     },
     {
         "id": "6",
@@ -366,30 +366,30 @@
     {
         "id": "54",
         "name": "portfolioDetails",
-        "az": "Təfərrüatlar",
-        "en": "Details",
-        "ru": "Подробности"
+        "az": "Javascript",
+        "en": "Javascript",
+        "ru": "Javascript"
     },
     {
         "id": "55",
         "name": "portfolioMock",
-        "az": "Maketlər",
-        "en": "Mockups",
-        "ru": "Мокапы"
+        "az": "Oyunlar",
+        "en": "Games",
+        "ru": "Игры"
     },
     {
         "id": "56",
         "name": "portfolioYoutube",
-        "az": "YouTube Videoları",
-        "en": "YouTube Videos\r\n",
-        "ru": "YouTube видео"
+        "az": "PHP",
+        "en": "PHP",
+        "ru": "PHP"
     },
     {
         "id": "57",
         "name": "portfolioVime",
-        "az": "Vime Videoları",
-        "en": "Vime Videos",
-        "ru": "Вайм-видео"
+        "az": "Layihələr",
+        "en": "Projects",
+        "ru": "Проекты"
     },
     {
         "id": "58",
@@ -677,5 +677,19 @@
         "az": "Portfolio",
         "en": "Portfolio",
         "ru": "Портфолио"
+    },
+    {
+        "id": "99",
+        "name": "slideTitle",
+        "az": "Referanslar",
+        "en": "References",
+        "ru": "Рекомендации"
+    },
+    {
+        "id": "100",
+        "name": "slidetTarget",
+        "az": "Referanslarimdan bəziləri nə deyir",
+        "en": "What Some of my Reference Say",
+        "ru": "Что говорят некоторые из моих ссылок"
     }
 ] }

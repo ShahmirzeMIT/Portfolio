@@ -200,7 +200,7 @@ export const Header = () => {
       </div>
       <div className="face">
         <div className="image">
-          <img src="assets/img/greencard.jpeg" alt="Green Card" />
+          <img src="./assets/img/greencard.jpeg" alt="Green Card" />
         </div>
       </div>
     </div>

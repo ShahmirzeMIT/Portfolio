@@ -13,7 +13,7 @@ import {  useState } from "react"
 		  >
 			<span className="span" >
 				{
-				open ?<FontAwesomeIcon icon={faChevronUp}  />  : <FontAwesomeIcon icon={faChevronDown}  />
+				open ? <FontAwesomeIcon icon={faChevronUp}  />  : <FontAwesomeIcon icon={faChevronDown}  />
 				}
 			</span>
 			
