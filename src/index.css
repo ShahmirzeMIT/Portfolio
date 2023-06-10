@@ -71,7 +71,6 @@ select {
  }
  
  .rightList ul li:nth-child(2) {
-	font-size: 25px;
 	padding-left: 10px;
 	padding-bottom: 10px;
  }
@@ -116,8 +115,12 @@ select {
  
  .contact {
 	margin-top: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 	padding-bottom: 25px;
  }
+ 
  
  .contact a:first-child {
 	padding: 15px;
@@ -140,9 +143,9 @@ select {
  
  
  .contact a:last-child {
-	
+	padding: 15px 0 15px 15px;
 	color: black;
-	padding-left: 1em;
+	padding: 15px;
   position: relative;
  }
  .contact a:last-child span{
@@ -402,7 +405,7 @@ width: 100%;
 	color: #272626;
 }
 .eductaion , .experience{
-	width: 430px; 
+	width: 280px; 
 }
 
 .borderYellow{
@@ -424,6 +427,13 @@ width: 100%;
 	padding-bottom: 1em;
 }
 .skill{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 0 2em 0;
+	justify-content: center;
+}
+.skill2{
+  width: 300px;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 0 0 2em 0;
@@ -847,6 +857,9 @@ color: white;
   .calPd8{
     padding: 8px 0;
   }
+  .resumep{
+    font-size: 1em;
+  }
   
   .txtArea{
     background: #f5df4e!important;
@@ -879,7 +892,10 @@ color: white;
     width: 100%;
     margin: 0 auto;
   }
-   
+  .wd80head{
+    width: 80%;
+    margin: 0 auto;
+  }
 
   
   
@@ -904,8 +920,19 @@ color: white;
   header{
     height: 130vh;
   }
+  .wd-80{
+    
+		margin: 0 auto;
+  }
+  .skill2{
+    width: 430px;
+  }
+  
  }
  @media only screen and (min-width: 600px) {
+  .eductaion , .experience{
+    width: 430px; 
+  }
 	.wd-80 {
 	    width: 80%;
 	}
@@ -915,11 +942,12 @@ color: white;
 	}
   .wd-80 {
 		width: 80%;
-		margin: 0 auto;
+		margin: 0 15px;
 	 }
    .wd-90{
     width: 90%;
    }
+   
  }
 
 

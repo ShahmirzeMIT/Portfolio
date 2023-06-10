@@ -65,13 +65,13 @@ function Resume() {
                                                     {
                                                       item.name=="eduSpecialty" || item.name=="eduCourse" 
                                                       || item.name=="eduJedCourse"|| item.name=="eduEnglishGeneral"   ?
-                                                      <p className="head">{item[lang]}</p>
+                                                      <p className="resumep">{item[lang]}</p>
                                                     :""
                                                     }
                                                     {
                                                       item.name=="eduStudyYear"  || item.name=="eduCourseYear"
                                                       || item.name=="eduJedYear" || item.name=="eduEnglishYear"?<>
-                                                      <p className="head">{item[lang]}</p><hr />
+                                                      <p className="resumep">{item[lang]}</p><hr />
                                                       </>
                                                   
                                                     :""
@@ -110,12 +110,12 @@ function Resume() {
                                                     }
                                                     {
                                                       item.name=="eduPosition"    ?
-                                                      <p className="head">{item[lang]}</p>
+                                                      <p className="resumep">{item[lang]}</p>
                                                     :""
                                                     }
                                                     {
                                                       item.name=="eduPosYear1" ?<>
-                                                      <p className="head">{item[lang]}</p><hr />
+                                                      <p className="resumep">{item[lang]}</p><hr />
                                                       </>
                                                   
                                                     :""
@@ -133,14 +133,17 @@ function Resume() {
             }
           
           <div className="wd100">
-              {
-                education && education.length >0  && data.length>0 ?<>
-                {
-                  education.filter((item)=>item.name=="mySkill")
-                  .map((item)=><h2 className="headtext">{item[lang]}</h2>)
-                }
-              </>:""
-            }
+            <div className="skill2">
+                 {
+                      education && education.length >0  && data.length>0 ?<>
+                      {
+                        education.filter((item)=>item.name=="mySkill")
+                        .map((item)=><h2 className="headtext">{item[lang]}</h2>)
+                      }
+                    </>:""
+                  }
+            </div>
+              
             <div className="skill">
              <div className="experience">
             {

@@ -42,7 +42,7 @@ export const Header = () => {
 <>
   <header id="home">
     <nav>
-      <div className="menu wd-80">
+      <div className="menu wd80head">
         <div>
           <img src="assets/img/logo.png" alt="Logo" />
         </div>
@@ -50,85 +50,6 @@ export const Header = () => {
           <ul>
             <li className="fs12">
               <FaPhoneAlt /> (994) 055 698 45 46
-            </li>
-            <li>
-              <Button onClick={handleOpen} className="btnOpen">
-                <FiMenu />
-              </Button>
-              <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-              >
-                <Box sx={{ height: '100%' }}>
-                  <ul className='openMenuUl'>
-                    {headmenu.map((item) =>
-                      menu && menu.length > 0 ?
-                        menu.map((item2, i) =>
-                          item2.id === item.menu ?
-                            <li key={item2.id}>
-                              <a href={`#${item.slag}`}>
-                                {item2[lang]}
-                              </a>
-                            </li>
-                            : null
-                        ) : null
-                    )}
-                    <li>
-                      <a
-                        href="https://twitter.com/ShahmirzeM"
-                        className="openMenuLink linkPd"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaTwitter />
-                      </a>
-                      <a
-                        href=""
-                        className="openMenuLink linkPd"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <BsFacebook />
-                      </a>
-                      <a
-                        href="https://www.instagram.com/botman_ru/"
-                        className="openMenuLink linkPd"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <BsInstagram />
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/in/sahmirze-memmedyarov-69ba60220/"
-                        className="openMenuLink linkPd"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <BsLinkedin />
-                      </a>
-                      <a
-                        href="https://www.reddit.com/user/Aggressive-Light-980"
-                        className="openMenuLink linkPd"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <BsReddit />
-                      </a>
-                    </li>
-                  </ul>
-                  <Typography
-                    id="modal-modal-title"
-                    variant="h6"
-                    component="h2"
-                  ></Typography>
-                  <Typography
-                    id="modal-modal-description"
-                    sx={{ mt: 2 }}
-                  ></Typography>
-                </Box>
-              </Modal>
             </li>
             <li className='dropdown-container1'>
               <select className='langSlct' onChange={(e) => { setLang(e.target.value) }}>
@@ -175,6 +96,7 @@ export const Header = () => {
           }
         </p>
         <div className="contact">
+          
           <a href="#works">
             {menu && menu.length > 0 ?
               menu
@@ -188,13 +110,13 @@ export const Header = () => {
             {menu && menu.length > 0 ?
               menu
                 .filter((item) => item.name.startsWith('slagContact'))
-                .map((item) => item[lang])
+                .map((item) =><>{item[lang]} <span>
+                <BsArrowDownCircle />
+              </span></>)
               :
               ''
             }
-            <span>
-              <BsArrowDownCircle />
-            </span>
+           
           </a>
         </div>
       </div>
