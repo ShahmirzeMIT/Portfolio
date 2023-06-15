@@ -30,7 +30,7 @@ function Laptop() {
                 }</h1>
                 <div className="btn1" >
                   <button>{laptop.filter((item)=>item.name=="hireButton")
-                .map((item,i)=>< div key={i}>{item[lang]}!</div>)
+                .map((item,i)=>< a className="hire" href="#contact" key={i}>{item[lang]}!</a>)
                 }</button>
                 </div>
               </div>

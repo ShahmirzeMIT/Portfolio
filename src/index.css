@@ -269,6 +269,13 @@ select {
     position: absolute;
     z-index: -1;
   }
+  a{
+    color: inherit;
+  }
+  .hire{
+    text-decoration: none;
+    color: black;
+  }
   .Elaqe{
    display: grid;
    height: 200px;

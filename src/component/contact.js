@@ -27,6 +27,8 @@ function Contact(){
 					<p className="fnt">{contact1.filter((item)=>item.name=="contact1Location").map((item)=>item[lang])}</p>
 					<h3 className="calPd8">{contact1.filter((item)=>item.name=="contact1Call").map((item)=>item[lang])}</h3>
 					<p className="fnt">{contact1.filter((item)=>item.name=="contac1Wh").map((item)=>item[lang])}</p>
+					<p  className="fnt">{contact1.filter((item)=>item.name=="mainBottomEmail").map((item)=>item[lang])}</p>
+					<p  className="fnt">{contact1.filter((item)=>item.name=="mainEmailText").map((item)=>item[lang])}</p>
 					<p>
 					<a
 							href="https://twitter.com/ShahmirzeM"
