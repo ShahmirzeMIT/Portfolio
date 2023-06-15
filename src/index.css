@@ -46,7 +46,7 @@ select {
  }
  
  header {
-	height: 110vh;
+	height: 112vh;
 	background-color: #f5df4e;
  }
  
@@ -1007,7 +1007,7 @@ color: white;
  @media only screen and (min-width: 1120px) {
   .scroll{
     width: 100%;
-    height: 10vh;
+    height: 12vh;
   }
   .scrollInside{
     position: absolute;
