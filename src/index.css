@@ -270,10 +270,15 @@ select {
     z-index: -1;
   }
   .Elaqe{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+   display: grid;
+   height: 200px;
+   align-content: space-between;
     margin: 2em 0;
+    grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  } 
+  .Elaqe> div{
+    text-align: center;
   }
   .mr-auto{
     margin: 0 auto;
@@ -769,9 +774,13 @@ position: relative;
   width: 50px;
   margin: 0em auto 0em  auto;
 }
+.wd-100{
+  width: 100% !important;
+}
 .littleImg img{
   width: 100%;
   height: 50px;
+  object-fit: cover;
   border-radius: 50%;
 }
 .ptP{

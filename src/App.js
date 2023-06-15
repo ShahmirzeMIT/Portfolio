@@ -43,8 +43,8 @@ export const DataContext=createContext()
              <Laptop/>
              <Questions/>
               <Slider/>
-             {/*<Contact/>
-              <Footer/> */}
+             <Contact/>
+              {/* <Footer/> */}
             </DataContext.Provider>
             </LanguageContext.Provider>
         );

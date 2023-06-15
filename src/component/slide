@@ -1,55 +1,23 @@
- <div className="wd80Sl">
-        {
-          sliderTarget && sliderTarget.length>0 && data.length>0 ?
-            <> 
-            <div className="client">
-              <div>{sliderTarget.filter((item)=>item.name=="slideTitle")
-              .map((item,i)=><span key={i}>{item[lang]}</span>)
-              }</div>
-            </div>
-            <h1 className="whiteS">{
-              sliderTarget.filter((item)=>item.name=="slidetTarget")
-              .map((item,i)=><span key={i}>{item[lang]}</span>)
-            }</h1>
+{information
+  .filter(
+    (item) =>
+      item.name === "mainBottomName" ||
+      item.name === "mainBottomEmail" ||
+      item.name === "mainBottomDate" ||
+      item.name === "mainBottomFrom"
+  )
+  .map((item, index) => (
+        <p>{item[lang]}</p>
+  ))}
 
-            <Carousel>
-              {
-                // data.map((item)=>console.log(item))
-                
-              }
-             {
-             sliderTarget.filter((item)=>item.name=="slide")
-             .map((item,i)=>
-              <Carousel.Item key={i}>
-                <p className='wd50p'> {}</p>
-                {data.map((item)=>console.log(item.id))}
-              </Carousel.Item>
-             )
-              // sliderTarget.filter((item)=>item.name=="slide")
-              // .map((item,i)=>
-              //    <Carousel.Item key={i}>
-              //     <p className="wd50P">{}</p>
-              //   {
-            
-                
-              //   }
-              //    {/*  <div className="littleImg">
-              //       <img src={"assets/img/" + item.src} />
-              //     </div>
-              //     <p>{item.fullName}</p>
-              //     <p>{item.workPlace}</p> */}
-              //   </Carousel.Item>
-              
-              // )
-             }
-              
-
-              {/* {slide.map((item, i) => (
-                
-              ))} */}
-            </Carousel>
-            </>
-          :""
-        }
-       
-      </div>
+{information
+  .filter(
+    (item) =>
+      item.name === "mainName" ||
+      item.name === "mainEmailText" ||
+      item.name === "mainDateText" ||
+      item.name === "mainFromText"
+  )
+  .map((item, index) => (
+        <p className="bold">{item[lang]}</p>
+  ))}
