@@ -680,16 +680,30 @@
     },
     {
         "id": "99",
-        "name": "slideTitle",
+        "name": "Titleslide",
         "az": "Referanslar",
         "en": "References",
         "ru": "Рекомендации"
     },
     {
         "id": "100",
-        "name": "slidetTarget",
+        "name": "Targetslide",
         "az": "Referanslarimdan bəziləri nə deyir",
         "en": "What Some of my Reference Say",
         "ru": "Что говорят некоторые из моих ссылок"
+    },
+    {
+        "id": "101",
+        "name": "slideRef2",
+        "az": "Həqiqətən Sako o qədər çalışır ki, buna görə də mənim fikrimcə o, uğurlu proqram tərtibatçısı olacaq. bir gün onun işini quracaq, istədiyini alacaq",
+        "en": "Truly Sako is hard working so much that's why in my opinion, he will become a successful software developer. one or other day he will set up her business he will receive what her want",
+        "ru": "На самом деле Сако так много работает, поэтому, на мой взгляд, он станет успешным разработчиком программного обеспечения. рано или поздно он наладит ее бизнес он получит то, что она хочет"
+    },
+    {
+        "id": "102",
+        "name": "slideWplace2",
+        "az": "Sahil-İT MMC",
+        "en": "Sahil-İT MMC",
+        "ru": "Sahil-İT MMC"
     }
 ] }

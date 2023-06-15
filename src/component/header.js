@@ -127,9 +127,12 @@ export const Header = () => {
       </div>
     </div>
     <div className="scroll">
-      <a href="#know">
+      <div className='scrollInside'>
+        <a href="#know">
         <AiOutlineArrowDown className="animasiya" />
       </a>
+      </div>
+      
     </div>
   </header>
 </>

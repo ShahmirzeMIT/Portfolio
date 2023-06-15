@@ -7,58 +7,48 @@ import { Fragment } from 'react';
 
 function Slider() {
   const value = useContext(DataContext);
-  const slide = value.slide;
   const [lang,setLang]=useContext(LanguageContext);
   const [data,setData]=useState([])
-  const sliderTarget = value.data;
+  const slide = value.data;
 
-  useEffect(()=>{
-    fetch('./assets/json/slide.json')
-    .then((data)=>data.json())
-    .then((data)=>setData(data.data))
-  },[])
+ useEffect(()=>{
+  fetch("./assets/json/slide.json")
+  .then((item)=>item.json())
+  .then((item)=>setData(item.data))
+ },[])
   return (
     <section className="grayS" id="slider">
-      <div className="wd80Sl">
-        {
-          sliderTarget && sliderTarget.length>0 && data.length>0 ?
-            <> 
-            <div className="client">
-              <div>{sliderTarget.filter((item)=>item.name=="slideTitle")
-              .map((item,i)=><span key={i}>{item[lang]}</span>)
-              }</div>
-            </div>
-            <h1 className="whiteS">{
-              sliderTarget.filter((item)=>item.name=="slidetTarget")
-              .map((item,i)=><span key={i}>{item[lang]}</span>)
-            }</h1>
+     <div className='wd80Sl'>
 
-            <Carousel>
-             {
-              sliderTarget.filter((item)=>item.name=="slide")
-              .map((item,i)=>
-                 <Carousel.Item key={i}>
-                  <p className="wd50P">{}</p>
-                 {/*  <div className="littleImg">
-                    <img src={"assets/img/" + item.src} />
-                  </div>
-                  <p>{item.fullName}</p>
-                  <p>{item.workPlace}</p> */}
-                </Carousel.Item>
-              
-              )
-             }
-              
-
-              {/* {slide.map((item, i) => (
-                
-              ))} */}
-            </Carousel>
-            </>
+      {
+       slide &&  slide.length>0 && data?
+        slide.filter((item)=>item.name=="Targetslide")
+        .map((item)=><>               
+        <h1 className='whiteS'  key={item.id}>{item[lang]}</h1> 
+          </>)
           :""
-        }
-       
-      </div>
+      }
+      <Carousel>
+      {
+        slide &&  slide.length>0 && data?
+        data.map((item)=>
+                <Carousel.Item >
+                     <p className="wd50P">{slide.filter((itemText)=>itemText.name.startsWith("slideRef"))
+                     .map((itemT)=>itemT.id==item.text?<>{itemT[lang]}</>:"")
+                     }</p> 
+                     <div className="littleImg"> 
+                        <img src={"./assets/img/"+item.src} />
+                     </div>
+                     <p>{item.name}</p>
+                     <p>{slide.filter((itemText)=>itemText.name.startsWith("slideWplace"))
+                     .map((itemT)=>itemT.id==item.workplace?<>{itemT[lang]}</>:"")
+                     }</p>
+                 </Carousel.Item>
+               
+        ) :""
+      }
+      </Carousel>
+     </div>
     </section>
   );
 }
