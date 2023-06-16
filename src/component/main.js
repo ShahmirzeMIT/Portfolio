@@ -30,8 +30,9 @@ function Main() {
           <h2>
             {information
               .filter((item) => item.name.includes("mainCall"))
-              .map((item) => item[lang])}
-            <span>
+              .map((item) => item[lang] +" ")}
+            <span>   
+
               {information
                 .filter((item) => item.name.includes("mainName"))
                 .map((item) => item[lang])}
