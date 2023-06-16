@@ -20,7 +20,7 @@ import {  useState } from "react"
 		 {title}
 		</div>
 		<div className={`accordion-item ${!open ? "collapsed" : ""}`}>
-		  <div className="accordion-content">{" "+ children}</div>
+		  <div className="accordion-content">{children}</div>
 		</div>
 	   </div>
 	)
