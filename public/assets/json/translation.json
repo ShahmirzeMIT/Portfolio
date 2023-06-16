@@ -583,9 +583,9 @@
     {
         "id": "85",
         "name": "eduPosition",
-        "az": "Full-Stack Developer",
-        "en": "Full-Stack Developer",
-        "ru": "Полный стек разработчик"
+        "az": "Front-End Developer",
+        "en": "Front-End Developer",
+        "ru": "Front-End Developer"
     },
     {
         "id": "86",
