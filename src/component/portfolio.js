@@ -2,8 +2,8 @@ import { useContext } from "react";
 import styles from "../index.css";
 import { useState } from "react";
 import { DataContext, LanguageContext } from "../App";
-import { Fragment } from "react";
-
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 function Portfolio() {
   const [filter, setFilter] = useState(0);
   const value = useContext(DataContext);
@@ -18,7 +18,14 @@ function Portfolio() {
   },[])
   
   const [lang, setLang] = useContext(LanguageContext);
-
+  const values = ['xxl-down'];
+	const [fullscreen, setFullscreen] = useState(true);
+	const [show, setShow] = useState(false);
+   
+	function handleShow(breakpoint) {
+	  setFullscreen(breakpoint);
+	  setShow(true);
+	}
   function filterByCat() {
     return filter === 0 ? image : image.filter((item) => item.src.includes(filter));
   }
@@ -61,7 +68,18 @@ function Portfolio() {
             {
               filterByCat().map((pic,i)=>
                   <div key={i} className={`wd300 ${filter !== 0 ? " pd15" : ""}`}>
+                      {values.map((v, idx) => (
+
+                    <Button key={idx} className="me-2 mb-2" onClick={() => handleShow(v)}>
                         <img src={`assets/img/${pic.src}`} />
+                    </Button>
+	           ))}
+                     <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+                      <Modal.Header closeButton>
+                        <Modal.Title>Modal</Modal.Title  >
+                      </Modal.Header>
+                      <Modal.Body>Modal body content</Modal.Body>
+                    </Modal>   
                   </div>
               )
             }

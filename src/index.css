@@ -120,7 +120,19 @@ select {
   justify-content: center;
 	padding-bottom: 25px;
  }
- 
+ .modal{
+  opacity: 0.6 !important;
+ }
+  .modal-content{
+    opacity: 0.6;
+  }
+  .btn{
+    background: none !important;
+    border: none !important ;
+  }
+ .modal-backdrop{
+  background: none !important;
+ }
  
  .contact a:first-child {
 	padding: 15px;
@@ -323,7 +335,7 @@ select {
   }
   .Portfolio{
     margin: 0 auto;
-      width: 70px;
+      width: 96px;
       background: #dfdf05;
       padding: 2px;
       color: white;

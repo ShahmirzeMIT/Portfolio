@@ -11,6 +11,7 @@
   import {  useEffect } from "react";
   import { useState } from "react";
 import { createContext } from "react";
+import Modals from "./component/modal";
 
 export const LanguageContext=createContext()
 export const DataContext=createContext()
@@ -43,6 +44,7 @@ export const DataContext=createContext()
              <Laptop/>
              <Questions/>
               <Slider/>
+              <Modals/>
              <Contact/>
               {/* <Footer/> */}
             </DataContext.Provider>
