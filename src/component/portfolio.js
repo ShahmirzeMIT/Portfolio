@@ -27,8 +27,9 @@ function Portfolio() {
 	  setShow(true);
 	}
   function filterByCat() {
-    return filter === 0 ? image : image.filter((item) => item.src.includes(filter));
+    return filter === 0 ? image : image.filter((item) =>item.menuId.includes(filter));
   }
+  console.log(filter)
 
   return (
     <>
@@ -71,7 +72,7 @@ function Portfolio() {
                       {values.map((v, idx) => (
 
                     <Button key={idx} className="me-2 mb-2" onClick={() => handleShow(v)}>
-                        <img src={`assets/img/${pic.src}`} />
+                        <img src={`./assets/img/${pic.src}`} />
                     </Button>
 	           ))}
                      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
