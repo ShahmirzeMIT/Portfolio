@@ -1,22 +1,29 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import styles from "../index.css";
 import { useState } from "react";
 import { DataContext, LanguageContext } from "../App";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 function Portfolio() {
+  const [pickOut,setPickOut]=useState(0)
+  const [portImage,setPortImage]=useState([])
   const [filter, setFilter] = useState(0);
   const value = useContext(DataContext);
   const menu = value.menu;
   const [image,setImage]=useState([])
   const portfolio = value.data;
 
-  useState(()=>{
+  useEffect(()=>{
     fetch('./assets/json/pImage.json')
     .then((data)=>data.json())
     .then((data)=>setImage(data.data))
+
+    fetch('./assets/json/ProjectImage.json')
+    .then((data)=>data.json())
+    .then((data)=>setPortImage(data.data))
   },[])
   
+  console.log(pickOut,portImage)
   const [lang, setLang] = useContext(LanguageContext);
   const values = ['xxl-down'];
 	const [fullscreen, setFullscreen] = useState(true);
@@ -29,8 +36,6 @@ function Portfolio() {
   function filterByCat() {
     return filter === 0 ? image : image.filter((item) =>item.menuId.includes(filter));
   }
-  console.log(filter)
-
   return (
     <>
       <section id="project">
@@ -72,14 +77,39 @@ function Portfolio() {
                       {values.map((v, idx) => (
 
                     <Button key={idx} className="me-2 mb-2" onClick={() => handleShow(v)}>
-                        <img src={`./assets/img/${pic.src}`} />
+                        <img src={`./assets/img/${pic.src}`} onClick={()=>setPickOut(pic.id)} />
                     </Button>
 	           ))}
                      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                       <Modal.Header closeButton>
-                        <Modal.Title>Modal</Modal.Title  >
                       </Modal.Header>
-                      <Modal.Body>Modal body content</Modal.Body>
+                      <Modal.Body>
+                      
+                        {
+                          portImage.map((item,i)=>
+                               item.Upload_id.includes(pickOut)?
+                               <>
+                              
+                              <div className="wdfull">
+                                 <img src={"./assets/img/" + item.name} />
+                              </div>
+                              <div>
+                                <br></br>
+                                <p>Git</p>
+                                <p><a href={item.git} target="_blank">{item.git}</a></p>
+                              </div>
+                              <div>
+                                
+                                <p>Site</p>
+                                <p><a href={item.site} target="_blank">{item.site}</a></p>
+                              </div>
+                               </>
+                               :""
+                          )
+                        }
+                        
+
+                      </Modal.Body>
                     </Modal>   
                   </div>
               )
