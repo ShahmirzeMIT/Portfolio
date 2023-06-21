@@ -44,7 +44,6 @@ export const DataContext=createContext()
              <Laptop/>
              <Questions/>
               <Slider/>
-              <Modals/>
              <Contact/>
               {/* <Footer/> */}
             </DataContext.Provider>
