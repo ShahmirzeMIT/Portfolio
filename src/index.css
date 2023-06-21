@@ -594,7 +594,8 @@ width: 100%;
     
   }
   .wdfull{
-    width: 100%;
+    width: 80%;
+    margin:0 auto;
 
   }
   .wdfull img{
