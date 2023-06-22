@@ -601,6 +601,7 @@ width: 100%;
   .wdfull img{
     width: 100%;
     height: 55vh;
+    object-fit: contain;
   }
   
   .mrp5{
