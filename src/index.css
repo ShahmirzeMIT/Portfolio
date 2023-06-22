@@ -120,12 +120,7 @@ select {
   justify-content: center;
 	padding-bottom: 25px;
  }
- .modal{
-  opacity: 0.6 !important;
- }
-  .modal-content{
-    opacity: 0.6;
-  }
+ 
   .btn{
     background: none !important;
     border: none !important ;
@@ -598,7 +593,7 @@ width: 100%;
     margin:0 auto;
 
   }
-  .wdfull img{
+  .wdfull video{
     width: 100%;
     height: 55vh;
     object-fit: contain;

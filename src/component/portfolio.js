@@ -18,7 +18,7 @@ function Portfolio() {
     .then((data)=>data.json())
     .then((data)=>setImage(data.data))
 
-    fetch('./assets/json/ProjectImage.json')
+    fetch('./assets/json/pVideo.json')
     .then((data)=>data.json())
     .then((data)=>setPortImage(data.data))
   },[])
@@ -87,11 +87,13 @@ function Portfolio() {
                       
                         {
                           portImage.map((item,i)=>
-                               item.Upload_id.includes(pickOut)?
+                               item.Uplaod_id.includes(pickOut)?
                                <>
                               
                               <div className="wdfull">
-                                 <img src={"./assets/img/" + item.name} />
+                                 <video width="400" controls>
+                                    <source src={"./assets/img/" + item.name} type="video/mp4"/>
+                                  </video>
                               </div>
                               <div>
                                 <br></br>
