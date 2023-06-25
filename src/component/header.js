@@ -97,7 +97,7 @@ export const Header = () => {
         </p>
         <div className="contact">
           
-          <a href="#works">
+          <a href="#project">
             {menu && menu.length > 0 ?
               menu
                 .filter((item) => item.name.startsWith('headW'))
