@@ -43,8 +43,8 @@ export const Header = () => {
   <header id="home">
     <nav>
       <div className="menu wd80head">
-        <div className='headImage'>
-          <img src="assets/img/logo.png" alt="Logo" />
+        <div className='headImage2'>
+          <img src="assets/img/logo.jpg" alt="Logo" />
         </div>
         <div className="rightList dulf">
           <ul>

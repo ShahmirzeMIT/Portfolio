@@ -1,12 +1,23 @@
 import { DataContext, LanguageContext } from "../App";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import styles from "../index.css";
 import { Fragment } from "react";
-
+import { AiOutlineUp } from 'react-icons/ai';
 function Main() {
   const value = useContext(DataContext);
   const information = value.data
   const [lang, setLang] = useContext(LanguageContext);
+  const elemup=useRef(null)
+  const getCordinats=()=>{
+    const elem=elemup.current
+    if(elem){
+      const { top, left, right, bottom } = elem.getBoundingClientRect();
+      if(bottom>512.34375){
+        elemup.className.add("exhibit")
+      }
+      
+    }
+  }
   return (
     <>
     <main id="know">
@@ -62,17 +73,12 @@ function Main() {
           </h2>
         </article>
       </div>
-
-      <div className="Elaqe">
-      
-                {
-                  
-                }
-       
-      </div>
     </div>
   ) : null
 } 
+     {/* <div> <span ref={elemup}  className="pFixed"><AiOutlineUp/></span></div>
+     <button onClick={getCordinats}>Get Element Coordinates</button> */}
+      
       </main> 
     </>
   );

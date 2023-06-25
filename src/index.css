@@ -166,6 +166,7 @@ select {
 	margin: 0 auto;
  }
  
+ 
  .image {
 	width: 265px;
 	height: 265px;
@@ -206,9 +207,14 @@ select {
 	    opacity: 1;
 	}
  }
+ .exhibit{
+display: none;
+ }
  
  main{
   padding-top: 5.5em;
+  margin-bottom: 4em;
+  position: relative;
   }
   html {
     scroll-behavior: smooth;
@@ -293,6 +299,11 @@ select {
   } 
   .Elaqe> div{
     text-align: center;
+  }
+  .pFixed{
+    position: fixed;
+    top: 0;
+    right: 0;
   }
   .mr-auto{
     margin: 0 auto;
