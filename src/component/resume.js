@@ -162,15 +162,15 @@ function Resume() {
 
             <div className="wd100">
               {education && education.length > 0 && data.length > 0 ? (
-                <>
+                <div className="experience mrau">
                   {education
                     .filter((item) => item.name === "mySkill")
                     .map((item, index) => (
-                      <h2 className="headtext" key={index}>
+                      <h2 className="headtext " key={index}>
                         {item[lang]}
                       </h2>
                     ))}
-                </>
+                </div>
               ) : (
                 ""
               )}
