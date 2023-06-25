@@ -595,7 +595,7 @@ width: 100%;
   }
   .wdfull video{
     width: 100%;
-    height: 55vh;
+    height: 35vh;
     object-fit: contain;
   }
   
@@ -965,6 +965,9 @@ color: white;
   
  }
  @media only screen and (min-width: 600px) {
+  .wdfull video{
+    width: 100%;
+    height: 55vh;}
   .contact {
     display: inherit;
     flex-wrap: inherit;
