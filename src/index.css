@@ -315,7 +315,19 @@ select {
   .mr-auto600{
     margin: 0 auto;
    }
-
+   .dulf{
+    display: flex;
+    align-items: center;
+   }
+.headImage{
+width: 300px;
+height: 110px;
+}
+.headImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
    
 .contentP{
   width: 80%;
@@ -473,6 +485,7 @@ width: 100%;
 	height: 6px;
 	background: rgb(215, 214, 214);
 }
+
 .mr1{
 	margin: 1em 0;
 }

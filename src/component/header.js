@@ -43,10 +43,10 @@ export const Header = () => {
   <header id="home">
     <nav>
       <div className="menu wd80head">
-        <div>
+        <div className='headImage'>
           <img src="assets/img/logo.png" alt="Logo" />
         </div>
-        <div className="rightList">
+        <div className="rightList dulf">
           <ul>
             <li className="fs12">
               <FaPhoneAlt /> (994) 055 698 45 46
