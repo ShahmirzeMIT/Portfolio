@@ -40,12 +40,11 @@ export const DataContext=createContext()
               <Main/>
               <Projects/>
                <Resume/>
-              <Portfolio/>
-             <Laptop/>
-             <Questions/>
-              <Slider/>
-             <Contact/>
-              {/* <Footer/> */}
+                <Portfolio/>
+               <Laptop/>
+               <Questions/>
+               <Slider/>
+               <Contact/>
             </DataContext.Provider>
             </LanguageContext.Provider>
         );
