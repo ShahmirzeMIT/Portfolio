@@ -301,10 +301,25 @@ display: none;
     text-align: center;
   }
   .pFixed{
-    position: fixed;
-    top: 0;
-    right: 0;
+    display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#f5df4e ;
+  
+  cursor: pointer;
+  padding: 5px 10px ;
+  border-radius: 50%;
   }
+  .pFixed a{
+    text-decoration: none;
+    color: white;
+  }
+  
   .mr-auto{
     margin: 0 auto;
   }

@@ -22,8 +22,6 @@ function Portfolio() {
     .then((data)=>data.json())
     .then((data)=>setPortImage(data.data))
   },[])
-  
-  console.log(pickOut,portImage)
   const [lang, setLang] = useContext(LanguageContext);
   const values = ['xxl-down'];
 	const [fullscreen, setFullscreen] = useState(true);

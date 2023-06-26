@@ -1,5 +1,5 @@
 import { DataContext, LanguageContext } from "../App";
-import { useContext, useRef } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import styles from "../index.css";
 import { Fragment } from "react";
 import { AiOutlineUp } from 'react-icons/ai';
@@ -8,14 +8,12 @@ function Main() {
   const information = value.data
   const [lang, setLang] = useContext(LanguageContext);
   const elemup=useRef(null)
-  const getCordinats=()=>{
-    const elem=elemup.current
-    if(elem){
-      const { top, left, right, bottom } = elem.getBoundingClientRect();
-      if(bottom>512.34375){
-        elemup.className.add("exhibit")
-      }
-      
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 40|| document.documentElement.scrollTop > 40) {
+      elemup.current.style.display = "block";
+    } else {
+      elemup.current.style.display = "none";
     }
   }
   return (
@@ -76,8 +74,7 @@ function Main() {
     </div>
   ) : null
 } 
-     {/* <div> <span ref={elemup}  className="pFixed"><AiOutlineUp/></span></div>
-     <button onClick={getCordinats}>Get Element Coordinates</button> */}
+     <div> <div ref={elemup}  className="pFixed" > <a href="#home"><AiOutlineUp/></a></div></div>
       
       </main> 
     </>
