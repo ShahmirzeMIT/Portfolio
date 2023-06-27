@@ -527,16 +527,16 @@
     {
         "id": "77",
         "name": "contact1Call",
-        "az": "Müraciət",
-        "en": "Call",
-        "ru": "Вызов"
+        "az": "Müraciət: +994556984546",
+        "en": "Call: +994556984546",
+        "ru": "Вызов: +994556984546"
     },
     {
         "id": "78",
         "name": "contac1Wh",
-        "az": "Whatsapp(+994556984546)",
-        "en": "Whatsapp(+994556984546)",
-        "ru": "Whatsapp(+994556984546)"
+        "az": "Whatsapp: +994556984546",
+        "en": "Whatsapp: +994556984546",
+        "ru": "Whatsapp: +994556984546"
     },
     {
         "id": "79",
