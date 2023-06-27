@@ -150,7 +150,7 @@ select {
  
  
  .contact a:last-child {
-	padding: 15px 15px 15px 0px;
+	padding: 15px 0px 15px 15px;
 	color: black;
 	padding: 15px;
   position: relative;
@@ -301,16 +301,15 @@ display: none;
     text-align: center;
   }
   .pFixed{
-    display: none;
+  display: none;
   position: fixed;
   bottom: 5px;
   right: 5px;
-  z-index: 99;
+  z-index: 99999;
   font-size: 18px;
   border: none;
   outline: none;
   background-color:#f5df4e ;
-  
   cursor: pointer;
   padding: 5px 10px ;
   border-radius: 50%;
