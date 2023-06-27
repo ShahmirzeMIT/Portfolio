@@ -152,7 +152,6 @@ select {
  .contact a:last-child {
 	padding: 15px 0px 15px 15px;
 	color: black;
-	padding: 15px;
   position: relative;
  }
  .contact a:last-child span{
