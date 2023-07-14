@@ -1,8 +1,8 @@
-import { useContext } from "react"
+import { useContext, useRef } from "react"
 import styles from "../index.css"
 import {AiOutlineArrowRight} from "react-icons/ai"
 import { DataContext, LanguageContext } from "../App"
-import { Fragment } from "react"
+import emailjs from '@emailjs/browser';
 import {BsArrowDownCircle,
 	BsFacebook,
 	BsInstagram,
@@ -14,6 +14,18 @@ function Contact(){
 	const value=useContext(DataContext)
 	const contact1=value.data
 	const [lang,setLang]=useContext(LanguageContext);
+	const form = useRef();
+	const sendEmail=(e)=>{
+		e.preventDefault();
+		emailjs.sendForm('service_9pjqz0p', 'template_x2apabb', form.current, 's_6XeWeh3cTKWhhki')
+		.then((result) => {
+		    console.log(result.text);
+		    window.location.reload(false);
+
+		}, (error) => {
+		    console.log(error.text);
+		});
+	}
 	return(
 		<section className="bgCon" id="contact">
 			{
@@ -75,21 +87,23 @@ function Contact(){
 
 				<div className="input">
 							<h1 className="txtStart">{contact1.filter((item)=>item.name=="contac2Title").map((item)=>item[lang])}</h1>
+							<form ref={form} onSubmit={sendEmail}>
 							<div className="mr2">
 								<label>{contact1.filter((item)=>item.name=="contac2Inp1").map((item)=>item[lang])}</label>
-								<div><input type="text" className="inputs" /></div>
+								<div><input type="text" className="inputs"name="user_name" /></div>
 							</div>
 							<div className="mr2">
 								<label>{contact1.filter((item)=>item.name=="contact2Inp2").map((item)=>item[lang])}:</label>
-								<div><input type="text" className="inputs" /></div>
+								<div><input type="text" className="inputs" name="user_email" /></div>
 							</div>
 							<div className="mr2">
 								<label>{contact1.filter((item)=>item.name=="contact2Inp3").map((item)=>item[lang])}:</label>
-								<div><textarea className="txtArea"></textarea></div>
+								<div><textarea className="txtArea" name="message"></textarea></div>
 							</div>
 							<div>
-								<button className="btnSend">{contact1.filter((item)=>item.name=="contact2Sent").map((item)=>item[lang])} <AiOutlineArrowRight /></button>
+								<button className="btnSend" >{contact1.filter((item)=>item.name=="contact2Sent").map((item)=>item[lang])} <AiOutlineArrowRight /></button>
 							</div>
+							</form>
 				</div>
 			</div>:""
 	}	
