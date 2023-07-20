@@ -4,6 +4,7 @@ import { useState } from "react";
 import { DataContext, LanguageContext } from "../App";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { CardMedia } from "@mui/material";
 function Portfolio() {
   const [pickOut,setPickOut]=useState(0)
   const [portImage,setPortImage]=useState([])
@@ -75,7 +76,14 @@ function Portfolio() {
                       {values.map((v, idx) => (
 
                     <Button key={idx} className="me-2 mb-2" onClick={() => handleShow(v)}>
-                        <img src={`./assets/img/${pic.src}`} onClick={()=>setPickOut(pic.id)} />
+                        <CardMedia
+                          component="img"
+                          height="194"
+                          image={`./assets/img/${pic.src}`}
+                          alt="Paella dish"
+                          onClick={()=>setPickOut(pic.id)}
+                        />
+                        {/* <img src=  /> */}
                     </Button>
 	           ))}
                      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
