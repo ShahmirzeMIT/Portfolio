@@ -72,11 +72,12 @@ function Portfolio() {
            <div className={`pictures ${filter !== 0 ? "jsCenter" : ""}`}>
             {
               filterByCat().map((pic,i)=>
-                  <div key={i} className={`wd300 ${filter !== 0 ? " pd15" : ""}`}>
+                  <div key={i} className={`wd300 ${filter !== 0 ? " pd15" : ""}`} style={{boxShadow:"0px 1px 5px 16px rgba(0,0,0,0.75)",marginBottom:" 3em"
+                }}>
                       {values.map((v, idx) => (
 
                     <Button key={idx} className="me-2 mb-2" onClick={() => handleShow(v)}>
-                        <CardMedia
+                        <CardMedia 
                           component="img"
                           height="194"
                           image={`./assets/img/${pic.src}`}
