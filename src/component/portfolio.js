@@ -5,6 +5,8 @@ import { DataContext, LanguageContext } from "../App";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { CardMedia } from "@mui/material";
+import {BsGithub} from "react-icons/bs"
+import {FaSitemap} from "react-icons/fa"
 function Portfolio() {
   const [pickOut,setPickOut]=useState(0)
   const [portImage,setPortImage]=useState([])
@@ -102,15 +104,10 @@ function Portfolio() {
                                     <source src={"./assets/img/" + item.name} type="video/mp4"/>
                                   </video>
                               </div>
-                              <div>
+                              <div style={{display:"flex",justifyContent:"center"}}>
                                 <br></br>
-                                <p>Git</p>
-                                <p><a href={item.git} target="_blank">{item.git}</a></p>
-                              </div>
-                              <div>
-                                
-                                <p>Site</p>
-                                <p><a href={item.site} target="_blank">{item.site}</a></p>
+                                <p style={{margin:"2em"}}><a href={item.git} target="_blank"><BsGithub style={{fontSize:"2em",color:"black"}}/></a></p>
+                                <p style={{margin:"2em"}}><a href={item.site} target="_blank"><FaSitemap style={{fontSize:"2em",color:"black"}}/></a></p>
                               </div>
                                </>
                                :""
