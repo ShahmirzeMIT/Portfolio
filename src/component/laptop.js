@@ -29,7 +29,7 @@ function Laptop() {
                 .map((item,i)=><div key={i}>{item[lang]}?</div>)
                 }</h1>
                 <div className="btn1" >
-                  <button>{laptop.filter((item)=>item.name=="hireButton")
+                  <button className="yellow">{laptop.filter((item)=>item.name=="hireButton")
                 .map((item,i)=>< a className="hire" href="#contact" key={i}>{item[lang]}!</a>)
                 }</button>
                 </div>

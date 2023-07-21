@@ -527,16 +527,16 @@
     {
         "id": "77",
         "name": "contact1Call",
-        "az": "Mobil: +994556984546",
-        "en": "Call: +994556984546",
-        "ru": "Мобильный: +994556984546"
+        "az": " +994556984546",
+        "en": " +994556984546",
+        "ru": " +994556984546"
     },
     {
         "id": "78",
         "name": "contac1Wh",
-        "az": "Whatsapp: +994556984546",
-        "en": "Whatsapp: +994556984546",
-        "ru": "Whatsapp: +994556984546"
+        "az": " +994556984546",
+        "en": " +994556984546",
+        "ru": " +994556984546"
     },
     {
         "id": "79",
@@ -719,5 +719,34 @@
         "az": "PHP",
         "en": "PHP",
         "ru": "PHP"
+    }
+    ,
+    {
+        "id": "105",
+        "name": "slideSite",
+        "az": "https:\/\/www.linkedin.com\/in\/vahidmuellim\/",
+        "en": "https:\/\/www.linkedin.com\/in\/vahidmuellim\/",
+        "ru": "https:\/\/www.linkedin.com\/in\/vahidmuellim\/"
+    },
+    {
+        "id": "106",
+        "name": "slideIcon",
+        "az": "BsLinkedin",
+        "en": "BsLinkedin",
+        "ru": "BsLinkedin"
+    },
+    {
+        "id": "108",
+        "name": "slideSite2",
+        "az": "https:\/\/www.linkedin.com\/in\/baxtiyar-mammadyarov\/",
+        "en": "https:\/\/www.linkedin.com\/in\/baxtiyar-mammadyarov\/",
+        "ru": "https:\/\/www.linkedin.com\/in\/baxtiyar-mammadyarov\/"
+    },
+    {
+        "id": "109",
+        "name": "slideIcon2",
+        "az": "BsLinkedin",
+        "en": "BsLinkedin",
+        "ru": "BsLinkedin"
     }
 ] }

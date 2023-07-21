@@ -7,12 +7,12 @@ import { DataContext, LanguageContext } from "../App";
 import { Fragment } from "react";
 
 const logo = [
-  { logo: <BsFillPaletteFill className="logos" /> },
-  { logo: <BsDisplay className="logos" /> },
-  { logo: <FaPencilRuler className="logos" /> },
-  { logo: <HiPaintBrush className="logos" /> },
-  { logo: <FaChartArea className="logos" /> },
-  { logo: <FaBullhorn className="logos" /> },
+  { logo: <BsFillPaletteFill className="logos yellowText" /> },
+  { logo: <BsDisplay className="logos yellowText" /> },
+  { logo: <FaPencilRuler className="logos yellowText" /> },
+  { logo: <HiPaintBrush className="logos yellowText" /> },
+  { logo: <FaChartArea className="logos yellowText" /> },
+  { logo: <FaBullhorn className="logos yellowText" /> },
 ];
 
 function Projects() {
@@ -29,7 +29,7 @@ function Projects() {
       {project
         .filter((item) => item.name === "projectFirst")
         .map((item, index) => (
-          <p key={index}>{item[lang]}</p>
+          <p key={index} className="yellow">{item[lang]}</p>
         ))}
       {project
         .filter((item) => item.name === "projectTitle")
@@ -55,7 +55,7 @@ function Projects() {
           )
           .map((item, index) => (
             <div className="txtCenter" key={index}>
-              <div>{logo[index].logo}</div>
+              <div className="">{logo[index].logo}</div>
               <h2>{item[lang]}</h2>
             </div>
           ))}

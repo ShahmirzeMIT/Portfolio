@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useContext, useEffect, useState } from 'react';
 import { DataContext, LanguageContext } from '../App';
 import { Fragment } from 'react';
+import { Link } from '@mui/material';
 
 function Slider() {
   const value = useContext(DataContext);
@@ -33,15 +34,16 @@ function Slider() {
         slide &&  slide.length>0 && data?
         data.map((item)=>
                 <Carousel.Item >
-                     <p className="wd50P">{slide.filter((itemText)=>itemText.name.startsWith("slideRef"))
-                     .map((itemT)=>itemT.id==item.text?<>{itemT[lang]}</>:"")
-                     }</p> 
                      <div className="littleImg"> 
                         <img src={"./assets/img/"+item.src} />
                      </div>
-                     <p>{item.name}</p>
-                     <p>{slide.filter((itemText)=>itemText.name.startsWith("slideWplace"))
+                     <p className='mSliderP'>{item.name}</p>
+                     <p className='mSliderP'></p>
+                     <p className='mSliderP'>{slide.filter((itemText)=>itemText.name.startsWith("slideWplace"))
                      .map((itemT)=>itemT.id==item.workplace?<>{itemT[lang]}</>:"")
+                     }</p>
+                     <p className="wd50P">{slide.filter((itemText)=>itemText.name.startsWith("slideRef"))
+                     .map((itemT)=>itemT.id==item.text?<>{itemT[lang]}</>:"")
                      }</p>
                  </Carousel.Item>
                

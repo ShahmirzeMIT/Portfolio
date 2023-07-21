@@ -29,7 +29,7 @@ function Questions() {
                   {question
                     .filter((item) => item.name === "slagFaq")
                     .map((item, i) => (
-                      <div className="faq" key={`faq-${i}`}>
+                      <div className="faq yellow" key={`faq-${i}`}>
                         {item[lang]}
                       </div>
                     ))}

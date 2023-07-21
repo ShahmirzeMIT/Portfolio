@@ -48,7 +48,7 @@ function Portfolio() {
             portfolio.filter((item)=>item.name=="portfolioTarget")
             .map((item ,i)=> 
               <div className="centr" key={i}>
-                  <div className="Portfolio">{item[lang]}</div>
+                  <div className="Portfolio yellow">{item[lang]}</div>
                 </div>
               )
           }

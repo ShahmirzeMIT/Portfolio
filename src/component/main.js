@@ -23,7 +23,7 @@ function Main() {
   information && information.length > 0 ? (
     <div className="wd-90">
       <div className="aboutme">
-        <p>
+        <p className="yellow">
           {information
             .filter((item) => item.name.includes("mainMe"))
             .map((item) => item[lang])}
@@ -55,7 +55,7 @@ function Main() {
         </article>
         <article>
           <div>
-            <p className="bgYellow"></p>
+            <p className="bgYellow yellow"></p>
             2
           </div>
 
@@ -74,7 +74,7 @@ function Main() {
     </div>
   ) : null
 } 
-     <div> <div ref={elemup}  className="pFixed" > <a href="#home"><AiOutlineUp/></a></div></div>
+     <div> <div ref={elemup}  className="pFixed yellow" > <a href="#home"><AiOutlineUp/></a></div></div>
       
       </main> 
     </>

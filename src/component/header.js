@@ -40,7 +40,7 @@ export const Header = () => {
 
   return (
 <>
-  <header id="home">
+  <header id="home " className='yellow'>
     <nav>
       <div className="menu wd80head">
         <div className='headImage2'>

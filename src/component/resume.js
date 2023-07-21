@@ -191,7 +191,7 @@ function Resume() {
                         </div>
                         <div className="yellowLine mr1">
                           <div
-                            className={`wd${item2.percent} h6`}
+                            className={`wd${item2.percent} h6 yellow`}
                           ></div>
                         </div>
                       </div>
@@ -217,7 +217,7 @@ function Resume() {
                         </div>
                         <div className="yellowLine mr1">
                           <div
-                            className={`wd${item2.percent} h6`}
+                            className={`wd${item2.percent} h6 yellow`}
                           ></div>
                         </div>
                       </div>
