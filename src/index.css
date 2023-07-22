@@ -1187,6 +1187,10 @@ color: white;
 	.nameEm{
 		flex-wrap: nowrap;
 	}
+  .flexIM{
+    display: flex;
+    align-items: center;
+  }
   .about{
 		justify-content: space-between;
 	}
