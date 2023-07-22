@@ -49,14 +49,14 @@ function Portfolio() {
           {
             portfolio.filter((item)=>item.name=="portfolioTarget")
             .map((item ,i)=> 
-              <div className="centr" key={i}>
-                  <div className="Portfolio yellow">{item[lang]}</div>
+              <div className="centr whitePo" key={i}>
+                  <div className="Portfolio whitePo">{item[lang]}</div>
                 </div>
               )
           }
           {
             portfolio.filter((item)=>item.name=="portfolioTitle")
-            .map((item ,i)=> <h1 key={i}>{item[lang]}</h1>
+            .map((item ,i)=> <h1 key={i} className="whitePo">{item[lang]}</h1>
               )
           }
            <div className="pickOut">
@@ -64,7 +64,7 @@ function Portfolio() {
                 {
                   portfolio.filter((item)=>item.id==53 || item.id==54 || item.id==55 ||item.id==56 || item.id==57 )
                   .map((item,i)=>
-                  <li key={i} onClick={() => setFilter(i)}>
+                  <li key={i} onClick={() => setFilter(i)} className="whitePo">
                     {item[lang]}
                   </li>
                   )
@@ -74,20 +74,34 @@ function Portfolio() {
            <div className={`pictures ${filter !== 0 ? "jsCenter" : ""}`}>
             {
               filterByCat().map((pic,i)=>
-                  <div key={i} className={`wd300 ${filter !== 0 ? " pd15" : ""}`} style={{boxShadow:"0px 1px 5px 16px rgba(0,0,0,0.75)",marginBottom:" 3em"
-                }}>
+                  <div key={i} className={`wd300 ${filter !== 0 ? " pd15" : ""}`}>
                       {values.map((v, idx) => (
 
-                    <Button key={idx} className="me-2 mb-2" onClick={() => handleShow(v)}>
+                    <Button key={idx} className="me-2 mb-2 h100" onClick={() => handleShow(v)}>
+                      
+                      <div className="card h100">
+                        {/* <img src={`./assets/img/${pic.src}`} className="pimage"/> */}
                         <CardMedia 
                           component="img"
                           height="194"
                           image={`./assets/img/${pic.src}`}
                           alt="Paella dish"
-                          onClick={()=>setPickOut(pic.id)}
-                        />
-                        {/* <img src=  /> */}
+                          onClick={()=>setPickOut(pic.id)} className="pimage"
+                        /> 
+
+{
+                           portImage.map((item,i)=>
+                               item.Uplaod_id.includes(pickOut)?
+                               <div style={{display:"flex",justifyContent:"center",position:"relative",zIndex:999}}>
+                                <br></br>
+                                <p style={{margin:"2em"}}><a href={item.git} target="_blank"><BsGithub style={{fontSize:"2em",color:"white"}}/></a></p>
+                                <p style={{margin:"2em"}}><a href={item.site} target="_blank"><FaSitemap style={{fontSize:"2em",color:"white"}}/></a></p>
+                              </div>:""
+                               )  
+                        } 
+                      </div>
                     </Button>
+                    
 	           ))}
                      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                       <Modal.Header closeButton>
@@ -103,11 +117,6 @@ function Portfolio() {
                                  <video width="400" controls>
                                     <source src={"./assets/img/" + item.name} type="video/mp4"/>
                                   </video>
-                              </div>
-                              <div style={{display:"flex",justifyContent:"center"}}>
-                                <br></br>
-                                <p style={{margin:"2em"}}><a href={item.git} target="_blank"><BsGithub style={{fontSize:"2em",color:"black"}}/></a></p>
-                                <p style={{margin:"2em"}}><a href={item.site} target="_blank"><FaSitemap style={{fontSize:"2em",color:"black"}}/></a></p>
                               </div>
                                </>
                                :""
