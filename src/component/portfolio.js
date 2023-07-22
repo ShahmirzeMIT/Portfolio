@@ -76,10 +76,10 @@ function Portfolio() {
               filterByCat().map((pic,i)=>
                   <div key={i} className={`wd300 ${filter !== 0 ? " pd15" : ""}`}>
                       {values.map((v, idx) => (
-
-                    <Button key={idx} className="me-2 mb-2 h100" onClick={() => handleShow(v)}>
+                    <div key={idx} className="me-2 mb-2 h100 card" >
+                    <Button className="h100" onClick={() => handleShow(v)}>
                       
-                      <div className="card h100">
+                      <div className=" h100">
                         {/* <img src={`./assets/img/${pic.src}`} className="pimage"/> */}
                         <CardMedia 
                           component="img"
@@ -88,21 +88,22 @@ function Portfolio() {
                           alt="Paella dish"
                           onClick={()=>setPickOut(pic.id)} className="pimage"
                         /> 
-
-{
+                      </div>
+                    </Button>
+                    {
                            portImage.map((item,i)=>
                                item.Uplaod_id.includes(pickOut)?
-                               <div style={{display:"flex",justifyContent:"center",position:"relative",zIndex:999}}>
+                               <div style={{display:"flex",justifyContent:"center",position:"relative",zIndex:999,bottom:0}}>
                                 <br></br>
                                 <p style={{margin:"2em"}}><a href={item.git} target="_blank"><BsGithub style={{fontSize:"2em",color:"white"}}/></a></p>
                                 <p style={{margin:"2em"}}><a href={item.site} target="_blank"><FaSitemap style={{fontSize:"2em",color:"white"}}/></a></p>
                               </div>:""
                                )  
-                        } 
-                      </div>
-                    </Button>
+                        }
+                    </div>
                     
 	           ))}
+           
                      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
                       <Modal.Header closeButton>
                       </Modal.Header>
