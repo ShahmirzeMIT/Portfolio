@@ -42,9 +42,9 @@ function Slider() {
                      <p className='mSliderP'>{slide.filter((itemText)=>itemText.name.startsWith("slideWplace"))
                      .map((itemT)=>itemT.id==item.workplace?<>{itemT[lang]}</>:"")
                      }</p>
-                     <p className="wd50P">{slide.filter((itemText)=>itemText.name.startsWith("slideRef"))
+                     {/* <p className="wd50P">{slide.filter((itemText)=>itemText.name.startsWith("slideRef"))
                      .map((itemT)=>itemT.id==item.text?<>{itemT[lang]}</>:"")
-                     }</p>
+                     }</p> */}
                  </Carousel.Item>
                
         ) :""
