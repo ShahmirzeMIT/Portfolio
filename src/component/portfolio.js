@@ -10,7 +10,7 @@ import {FaSitemap} from "react-icons/fa"
 function Portfolio() {
   const [pickOut,setPickOut]=useState(0)
   const [portImage,setPortImage]=useState([])
-  const [filter, setFilter] = useState(0); 
+  const [filter, setFilter] = useState(0);
   const value = useContext(DataContext);
   const menu = value.menu;
   const [image,setImage]=useState([])
@@ -31,11 +31,11 @@ function Portfolio() {
 	const [show, setShow] = useState(false);
    
 	function handleShow(breakpoint) {
-	  setFullscreen(breakpoint);
-	  setShow(true);
-	}
+    setFullscreen(breakpoint);
+    setShow(true); 
+  }
   function filterByCat() {
-    return filter === 0 ? image : image.filter((item) =>item.menuId.includes(filter));
+    return filter === 0 ? image : image.filter((item) => item.menuId.includes(filter));
   }
   return (
     <>
@@ -79,7 +79,8 @@ function Portfolio() {
                     <div key={idx} className="me-2 mb-2 h100 card" >
                     <Button className="h100" onClick={() => handleShow(v)}>
                       
-                      <div className=" h100 flexIM">  
+                      <div className=" h100 flexIM">
+                        
                         <CardMedia 
                           component="img"
                           height="194"
