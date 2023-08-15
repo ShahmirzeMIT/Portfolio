@@ -10,7 +10,7 @@ import {FaSitemap} from "react-icons/fa"
 function Portfolio() {
   const [pickOut,setPickOut]=useState(0)
   const [portImage,setPortImage]=useState([])
-  const [filter, setFilter] = useState(0);
+  const [filter, setFilter] = useState(0); 
   const value = useContext(DataContext);
   const menu = value.menu;
   const [image,setImage]=useState([])
