@@ -79,8 +79,7 @@ function Portfolio() {
                     <div key={idx} className="me-2 mb-2 h100 card" >
                     <Button className="h100" onClick={() => handleShow(v)}>
                       
-                      <div className=" h100 flexIM">
-                        {/* <img src={`./assets/img/${pic.src}`} className="pimage"/> */}
+                      <div className=" h100 flexIM">  
                         <CardMedia 
                           component="img"
                           height="194"
