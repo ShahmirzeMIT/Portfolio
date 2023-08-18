@@ -180,7 +180,7 @@ function Resume() {
             {
               education && education.length >0  && data.length>0  ?<>
               {
-                education.filter((item)=>item.id==46 || item.id==47 || item.id==48 || item.id==103)
+                education.filter((item)=>item.id==46 || item.id==47 || item.id==48 || item.id==103 || item.id==110)
                 .map((item)=>
                  data.map((item2,i)=>
                 item.id==item2.name?
@@ -206,7 +206,7 @@ function Resume() {
             {
               education && education.length >0  && data.length>0  ?<>
               {
-                education.filter((item)=>item.id==49 || item.id==50 || item.id==51 || item.id==104)
+                education.filter((item)=>item.id==49 || item.id==50 || item.id==51 || item.id==104 || item.id==111)
                 .map((item)=>
                  data.map((item2,i)=>
                 item.id==item2.name?

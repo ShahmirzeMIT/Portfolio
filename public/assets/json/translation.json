@@ -748,5 +748,19 @@
         "az": "BsLinkedin",
         "en": "BsLinkedin",
         "ru": "BsLinkedin"
+    },
+     {
+        "id": "110",
+        "name": "skillNextJS",
+        "az": "Next.js",
+        "en": "Next.js",
+        "ru": "Next.js"
+    },
+    {
+        "id": "111",
+        "name": "skillLaravel",
+        "az": "Laravel",
+        "en": "Laravel",
+        "ru": "Laravel"
     }
 ] }
