@@ -688,9 +688,9 @@
     {
         "id": "100",
         "name": "Targetslide",
-        "az": "Referanslarimdan bəziləri nə deyir",
-        "en": "What Some of my Reference Say",
-        "ru": "Что говорят некоторые из моих ссылок"
+        "az": "Referanslarım kimlərdir",
+        "en": "Who are my references",
+        "ru": "Кто мои рекомендации?"
     },
     {
         "id": "101",
@@ -768,7 +768,7 @@
         "name": "slideWplace3",
         "az": "Head of English Lang. Dep.",
         "en": "Head of English Lang. Dep.",
-        "ru": "Руководитель английского языка. Деп."
+        "ru": "Сэнана Гусейнзаде School"
     },
     {
         "id": "114",
