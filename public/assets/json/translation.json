@@ -590,9 +590,9 @@
     {
         "id": "86",
         "name": "eduPosYear1",
-        "az": "15.04.2023\/Hazırda",
-        "en": "15.04.2023\/Present",
-        "ru": "15.04.2023\/Настоящее время"
+        "az": "01.04.2023\/01.09.2023",
+        "en": "01.04.2023\/01.09.2023",
+        "ru": "01.04.2023\/01.09.2023"
     },
     {
         "id": "87",
@@ -776,5 +776,26 @@
         "az": "bos",
         "en": "empty",
         "ru": "пустой"
+    }, 
+    {
+        "id": "116",
+        "name": "eduCompanyName2",
+        "az": "GlobalSoft",
+        "en": "GlobalSoft",
+        "ru": "GlobalSoft"
+    },
+    {
+        "id": "117",
+        "name": "eduPosition2",
+        "az": "Full-Stack Developer",
+        "en": "Full-Stack Developer",
+        "ru": "Full-Stack Developer"
+    },
+    {
+        "id": "118",
+        "name": "eduPosYear2",
+        "az": "31.08.2023\/Hazirda",
+        "en": "31.08.2023\/Present",
+        "ru": "31.08.2023\/Настоящее время"
     }
 ] }

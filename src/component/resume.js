@@ -125,23 +125,23 @@ function Resume() {
                       <div className="study">
                         {education
                           .filter((item) =>
-                            ["eduCompanyName", "eduPosition", "eduPosYear1"].includes(
+                            ["eduCompanyName", "eduPosition", "eduPosYear1","eduCompanyName2", "eduPosition2", "eduPosYear2"].includes(
                               item.name
                             )
                           )
                           .map((item, index) => (
                             <Fragment key={index}>
-                              {item.name === "eduCompanyName" ? (
+                              {item.name === "eduCompanyName" || item.name === "eduCompanyName2" ? (
                                 <h3 className="head">{item[lang]}</h3>
                               ) : (
                                 ""
                               )}
-                              {item.name === "eduPosition" ? (
+                              {item.name === "eduPosition" || item.name === "eduPosition2" ? (
                                 <p className="head">{item[lang]}</p>
                               ) : (
                                 ""
                               )}
-                              {item.name === "eduPosYear1" ? (
+                              {item.name === "eduPosYear1"|| item.name === "eduPosYear2" ? (
                                 <>
                                   <p className="head">{item[lang]}</p>
                                   <hr />
