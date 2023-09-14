@@ -561,28 +561,28 @@
     },
     {
         "id": "82",
-        "name": "contact2Inp3",
+        "name":"contact2Inp3",
         "az": "Sizə necə kömək edə bilərəm?:",
         "en": "How can I Help you?:",
         "ru": "Могу я чем-нибудь помочь?:"
     },
     {
         "id": "83",
-        "name": "contact2Sent",
+        "name":"contact2Sent",
         "az": "Göndərmək",
         "en": "Sent",
         "ru": "Отправил"
     },
     {
         "id": "84",
-        "name": "eduCompanyName",
+        "name":"eduCompanyName",
         "az": "Sahil-İT MMC",
         "en": "Sahil-İT MMC",
         "ru": "Sahil-İT MMC"
     },
     {
         "id": "85",
-        "name": "eduPosition",
+        "name":"eduPosition",
         "az": "Front-End Developer",
         "en": "Front-End Developer",
         "ru": "Front-End Developer"
@@ -590,9 +590,9 @@
     {
         "id": "86",
         "name": "eduPosYear1",
-        "az": "01.04.2023\/01.09.2023",
-        "en": "01.04.2023\/01.09.2023",
-        "ru": "01.04.2023\/01.09.2023"
+        "az": "01.01.2023\/01.05.2023",
+        "en": "01.01.2023\/01.05.2023",
+        "ru": "01.01.2023\/01.05.2023"
     },
     {
         "id": "87",
@@ -787,15 +787,15 @@
     {
         "id": "117",
         "name": "eduPosition2",
-        "az": "Full-Stack Developer",
-        "en": "Full-Stack Developer",
-        "ru": "Full-Stack Developer"
+        "az": "Full-Stack Developer (Intern)",
+        "en": "Full-Stack Developer (Intern)",
+        "ru": "Full-Stack Developer (Intern)"
     },
     {
         "id": "118",
         "name": "eduPosYear2",
-        "az": "31.08.2023\/Hazirda",
-        "en": "31.08.2023\/Present",
-        "ru": "31.08.2023\/Настоящее время"
+        "az": "16.06.2023\/Hazirda",
+        "en": "16.06.2023\/Present",
+        "ru": "16.06.2023\/Настоящее время"
     }
 ] }
